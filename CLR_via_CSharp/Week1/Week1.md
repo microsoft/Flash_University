@@ -2,7 +2,7 @@
 ## Goals for Today
 - understand why C# and the CLR exist/the problems that led to the solutions described
 - How a C# application works (execution model, ch1)
-- Barebones of what is needed to understand
+- Barebones of what is needed to understand a C# file
 
 ## Brief History of Computing
 ### Common Occurrence in Science 
@@ -61,8 +61,24 @@
 - C#
     - Microsoft's answer to Java
     - .cs -C#complier-> intermediate language (IL) -CLR> result
-    - .cs compiles into IL and executes on the CLR
+    - .cs compiles into IL and executes on the CLR (common language runtime)
     - also has a garbage collector
 
-- CLR grab bag
-    - technically, any program that can convert into 
+### Common Language Runtime grab bag
+- Any language that can be converted into IL can run on it.
+    - IronPython, Iron Ruby and a whole bunch of other stuff exist to be able to run "non C# stuff" on the CLR
+        - Would like to add a easy way to show this later/ wasn't able to get it so far
+- Managed vs Unmanaged Code
+    - simply put, if an application runs on the CLR, it's managed (logic I'm using is "it is running on something w/ a garbage collector therefore it is memory managed")
+
+### Modules and Assemblies
+For our purposes, a module has a PE32 header, a CLR header, metadata, and the acutal IL code. 
+For more detail, see chart on page 5
+A module is not the smallest indepenendt unit.
+An Assembly is the smallest unit of reuse; contains one or more modules.
+
+Module(s) + Resource(s) --> Compiler --> Assembly (Manifest saying whats in here) + [Module]
+
+#### CLR via c# = tour of the CLR using C# as the language to explore
+
+### I'm assuming we're relatively good on types, classes, etc. The last bit is kind of just prepping/undertstanding how certain things work
