@@ -22,8 +22,12 @@ namespace Session_1.Composition
             Y = y;
         }
 
-        public int X { get; private set; }
-        public int Y { get; private set; }
+        /*
+         * X, Y, Move, and MoveAbsolute contain the location manipulation
+         * logic inside themselves, rather than calling into a Location object
+         */
+        public int X { get; private set; } = 0;
+        public int Y { get; private set; } = 0;
 
         public void Move(int dx, int dy)
         {

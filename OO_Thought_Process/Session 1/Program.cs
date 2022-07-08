@@ -10,6 +10,9 @@ class Program
         /*
          * Usage is the same between Eager & Lazy versions -
          * ie the interface is the same, but the implementation is different
+         * 
+         * You can change the declaration of lazyRect to use EagerRectangle (or vice versa)
+         * and the rest of the code will work without any additional changes
          */
 
         Encapsulation.LazyRectangle lazyRect = new Encapsulation.LazyRectangle(width: 1, height: 2);
@@ -48,18 +51,22 @@ class Program
     
     public static void RunPolymorphism() {
         /*
-         * Both `circle` and `rect` have a declared type of Polymorphism.Shape,
+         * Both `circle` and `rect` are stored in a list of Shape,
          * but, at runtime, it uses the specific implementation (Circle or Rectangle)
          * to calculate the area.
          * 
          * This is another example of the separation of interface & implementation
          */
 
-        Polymorphism.Shape circle = new Polymorphism.Circle(2);
-        Polymorphism.Shape rect = new Polymorphism.Rectangle(2, 4);
+        List<Polymorphism.Shape> shapes = new List<Polymorphism.Shape>() {
+            new Polymorphism.Circle(2),
+            new Polymorphism.Rectangle(2, 4)
+        };
 
-        Console.WriteLine("    circle: area={0:N}", circle.Area);
-        Console.WriteLine(" rectangle: area={0:N}", rect.Area);
+        for (int i = 0; i < shapes.Count; i++)
+        {
+            Console.WriteLine(" shape {0}: area={1:N}", i, shapes[i].Area);
+        }
     }
 
     public static void RunComposition() {
