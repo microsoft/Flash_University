@@ -10,8 +10,7 @@ style: |
         position: absolute;
         bottom: 2rem;
         font-weight: bold;
-        opacity: .75;
-        /* color - slate blue? */
+        color: #5a626c;
     }
 
     section.centered * {
@@ -26,10 +25,27 @@ style: |
 # Object-Oriented Thought Process
 **Session 1 - Introduction**
 
+<!-- notes
+-->
+
+---
+
+
+# Overview
+
+Course is all about Object-Oriented Programming
+Conceptual rather than technical
+
+<div class="space" />
+
+Course is language agnostic, but examples will be in C#
+Materials (eg code) in https://github.com/microsoft/Flash_University
+
 
 <!-- notes
     questions/discussion welcome throughout
-    focus on conceptual things & design
+    focus on conceptual things & design rather than implementation
+    but questions on how it works in C# - ask!
 -->
 
 ---
@@ -230,8 +246,9 @@ Another means of abstraction
 ---
 
 
-<!-- _class: centered -->
+<!-- _class: centered invert -->
 
 # Questions/Discussion
+Examples: https://github.com/microsoft/Flash_University
 
 
