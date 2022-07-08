@@ -4,11 +4,12 @@
 - How a C# application works (execution model, ch1)
 - Barebones of what is needed to understand a C# file
 
-## Brief History of Computing
-### Common Occurrence in Science 
-    - Something gets discovered (!1820 Lithium discovered)
-    - takes until ~1970 to get used as a Bipolar drug
-    - 150 years until application of discovery
+## Brief History of Computing --> Why the CLR and C# exist
+### Discovery --> usage is often a slow process
+    - Something gets discovered (~1800-1820 Lithium discovered)
+        - 1940s as a grease agent during WWII
+        - takes until ~1950 to get used for mania
+        - 1970 Bipolar med
     - Number Theory (specifically primes) is almost as old as math
         - first major use in cryptography is in the last 100 years
 ### Boolean Algebra
@@ -31,14 +32,16 @@
 ### Pretty common problem in life/translation in a foreign country
     - You're trying to have one person who is fluent in one language communicate with another person who fluent in another
     - What are your options?
-        - Can have one try to learn the other language
-        - Create a setup where there's something in the middle
+
+<!--- - Can have one try to learn the other language
+      - Create a setup where there's something in the middle --->
+        
 ### Why don't we write everything in Binary?/Speedy History of languages
-- Functionally useless to people
+- Functionally meaningless to people
 - Assembly added some syntax/meaning to the code before it was read by the computer
         - It is called "assembly" because it is assembled into machine code (see code sample)
-        - Still not really readable, but more workable than just numbers
-- Human Language (English for now) <-7-6-5-4-3-2-1-> Computer Language (Binary)
+        - Still not really readable, but more workable than machine code
+- Human Language (let's pick English) <-7-6-5-4-3-2-1-> Computer Language (Binary)
     - arbitrary numbers
         - anything low  is easy for the computer to read/faster for computer
         - anything high is easy for a human to write/understand, slower for a computer to read/execute
@@ -49,6 +52,8 @@
 - C++
     - superset of C with classes
     - what's the potenial problem with 'perfectlyFine.cpp'
+    - "I spent a large part of my life fixing these kinds of problems" -Michael McCann
+
 ### What if there's more than 1 type of computer
     - We write a program, how do we ensure it runs on Windows, Mac, Linux etc?
     - solution is still the same translation problem, just scaled up a level
@@ -60,6 +65,7 @@
     - .java compiles into bytecode and executes on the JRE 
 - C#
     - Microsoft's answer to Java
+    - before open source era
     - .cs -C#complier-> intermediate language (IL) -CLR> result
     - .cs compiles into IL and executes on the CLR (common language runtime)
     - also has a garbage collector
@@ -70,6 +76,7 @@
         - Would like to add a easy way to show this later/ wasn't able to get it so far
 - Managed vs Unmanaged Code
     - simply put, if an application runs on the CLR, it's managed (logic I'm using is "it is running on something w/ a garbage collector therefore it is memory managed")
+    - C++ is the special 
 
 ### Modules and Assemblies
 For our purposes, a module has a PE32 header, a CLR header, metadata, and the acutal IL code. 
