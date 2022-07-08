@@ -104,6 +104,42 @@ marp: true
 
 ---
 
+### Runtime execution, high level overview (based off of pg 12)
+
+Using the "Hello World" application, lets assume we have the following
+1. The file (helloworld.exe)
+2. Console
+3. Memory
+4. JIT (Just in time) Compiler
+5. Native Code
+
+---
+### Steps/what happens when you hit run in VS
+1. We have a main method (hidden in this file [when creating a sln, do not allow "top level statements"])
+2. The main method gets called/instantiates a Console with an internal structure for all methods
+3. The main method calls the first function, Console.WriteLine
+    a. Method is not already in the Console's dynamic memory
+    b. uses the JIT compiler to access the MsCorEE.dll to get Console.WriteLine and compile the native code for the function
+    c. execute and store that function in dynamic memory (Richter has more indept steps about the JIT compiler but probably not necessary)
+4. Now we get Console.WriteLine again
+5. The function is already stored
+    a. no need to go back to the .dll to recretae it
+6. execute it from native code /endcontinueprogram
+
+---
+
+## FCL Framework Class Library
+- a bunch of frameworks that expose some functionality 
+- My current understanding is that when you create a new VS solution, each option is basically one of these.
+
+
+---
+
+## Definitions
+- Namespace: I just think of it as the sub object /definition you're trying to access within a given FCL
+- Types: Types are basically the building blocks of C# --> second section is dedicated to understanding them. 
+--
+
 ### Common Language Runtime grab bag
 - Any language that can be converted into IL can run on it.
     - IronPython, Iron Ruby and a whole bunch of other stuff exist to be able to run "non C# stuff" on the CLR
