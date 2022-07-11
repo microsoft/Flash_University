@@ -23,7 +23,7 @@ style: |
 <!-- _footer: '**Covers Chapter 1: "Introduction"**' -->
 
 # Object-Oriented Thought Process
-**Session 1 - Introduction**
+**Session 1 - Fundamental OO Concepts**
 
 <!-- notes
 -->
@@ -142,6 +142,7 @@ A class defines the attributes & behaviors for its objects
 Classes are pieces of code
 
 <!-- notes
+    Objects are runtime instantiations/manifestations of a class
 -->
 
 
@@ -180,6 +181,8 @@ Ideally, only what is necessary for interaction is exposed
     answer:
     attributes are part of the implementation (they are the state)
     exposing attributes ties the interface to the implementation
+
+    look at example
 -->
 
 
@@ -201,6 +204,7 @@ Can be difficult to tell how much abstraction is required
 <p class="questions">How do you think about when to abstract?</p>
 
 <!-- notes
+    look at example
 -->
 
 
@@ -232,6 +236,8 @@ Polymorphism is typically implemented via inheritance
     inheritance = "subtype polymorphism"
 
     answer: ad-hoc, parametric, row
+
+    look at example
 -->
 
 
@@ -249,6 +255,7 @@ Another means of abstraction
 <p class="questions"></p>
 
 <!-- notes
+    look at example
 -->
 
 
