@@ -1,4 +1,4 @@
-# Week 2 (Types Chapters 4,5)
+# Week 2 (Types Chapters 4)
 
 ## Common Type system
 * CLR is all about types. "everything is at some level, a type"
@@ -18,3 +18,6 @@
 * Arguably have to have more as it can support more languages than just C#
 
 ## Chart
+
+## Type Fundamentsals 
+* IC# is relatively unique in that it is 
