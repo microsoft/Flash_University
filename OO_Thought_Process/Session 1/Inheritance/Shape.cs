@@ -11,10 +11,16 @@ namespace Session_1.Inheritance
      * inherits from Rectangle. Each class builds on its superclass,
      * adding functionality specific to the subclass.
      * 
+     * In other words a RotatedRectangle is a Rectangle, and a Rectangle is a Shape
+     * 
      * Inheritance also enables code reuse across sibling classes -
-     * a Circle class that inherits from Shape could be added; the location logic
-     * would be defined in a single place (Shape) but both Circle and Rectangle
+     * a Triangle class that inherits from Shape could be added; the location logic
+     * would be defined in a single place (Shape) but both Triangle and Rectangle
      * classes use it.
+     * 
+     * However, inheritance can cause issues in the future if not thought through
+     * completely. This example is not necessarily the best design - what if we
+     * wanted to add a Triangle AND a RotatedTriangle class? 
      */
 
     /**

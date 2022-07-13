@@ -10,7 +10,7 @@ namespace Session_1.Composition
      * In this example we've abstracted the 'location' functionality into another class,
      * which we compose with the ComposedShape class.
      * 
-     * The `_location` field is private and thus not a part of the public interface -
+     * The `_location` field (and Location class) are completely hidden from the public interface -
      * this means that to the outside world, this class is equivalent to the UncomposedShape
      * class that implemented the location logic (eg `move`) directly inside itself.
      */
@@ -25,6 +25,10 @@ namespace Session_1.Composition
             _location = new Location(x, y);
         }
 
+        /*
+         * Here X, Y, Move, and MoveAbsolution call into the
+         * internal Location object
+         */
         public int X { get => _location.X; }
         public int Y { get => _location.Y; }
 

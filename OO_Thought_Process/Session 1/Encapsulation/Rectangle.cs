@@ -16,7 +16,12 @@ namespace Session_1.Encapsulation
 
     /**
      * This class computes the area lazily -
-     * when the property is accessed
+     * when the property is accessed.
+     * 
+     * It's public interface is:
+     *     public int Width { get; set; }
+     *     public int Height { get; set; }
+     *     public int Area { get; }
      */
     public class LazyRectangle
     {
@@ -26,23 +31,25 @@ namespace Session_1.Encapsulation
             Height = height;
         }
 
+        #region public members
         public int Width { get; set; } = 0;
         public int Height { get; set; } = 0;
 
         public int Area { get => Width * Height; }
+        #endregion
     }
 
     /**
      * This class computes the area eagerly -
      * the _area field is re-calculated whenever the width or height is set
+     * 
+     * It's public interface is also (all the additional fields/methods are private):
+     *     public int Width { get; set; }
+     *     public int Height { get; set; }
+     *     public int Area { get; }
      */
     public class EagerRectangle
     {
-        private int _width = 0;
-        private int _height = 0;
-
-        private int _area;
-
         public EagerRectangle(int width = 0, int height = 0)
         {
             _width = width;
@@ -50,6 +57,7 @@ namespace Session_1.Encapsulation
             CalculateArea();
         }
 
+        #region public members
         public int Width {
             get => _width;
             set {
@@ -68,9 +76,17 @@ namespace Session_1.Encapsulation
         }
 
         public int Area { get =>_area; }
+        #endregion
+
+        #region private members (not part of the interface)
+        private int _width = 0;
+        private int _height = 0;
+
+        private int _area;
 
         private void CalculateArea() {
             _area = _width * _height;
         }
+        #endregion
     }
 }

@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Lesson.md" />
   </ItemGroup>
 
 </Project>

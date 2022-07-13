@@ -62,7 +62,9 @@ OO compliments other paradigms
 <p class="questions">What makes a paradigm?</p>
 
 <!-- notes
-    paradigm is a way of thinking/modeling
+    answer: paradigm is a way of thinking/modeling
+    
+    language != paradigm
     most languages have aspects of multiple paradigms
         (C# has delegates, LINQ)
 -->
@@ -114,13 +116,17 @@ Building block of an OO program
 
 <div class="space" />
 
-Objects control access to contained data
+Objects control access to contained members
 
 Calling a method = "sending a message to the object"
 
 <p class="questions">What benefits/power come from building with objects?</p>
 
 <!-- notes
+    objects can be any size
+
+    answer:
+        encapsulation, composition (everthing an object?), abstraction, modularity
 -->
 
 
@@ -171,6 +177,7 @@ Ideally, only what is necessary for interaction is exposed
 <p class="questions">What are the benefits of this Rule of Thumb?</p>
 
 <!-- notes
+    answer:
     attributes are part of the implementation (they are the state)
     exposing attributes ties the interface to the implementation
 -->
@@ -217,12 +224,14 @@ Polymorphism is typically implemented via inheritance
 <!-- notes
     different objects have different implementations
 
-    inheritance = "subtype polymorphism"
-
     2 components
      - use subclass as superclass
      - and invoke method which invoke's the subclass's method
         ("abstract" or "virtual")
+
+    inheritance = "subtype polymorphism"
+
+    answer: ad-hoc, parametric, row
 -->
 
 
@@ -251,4 +260,9 @@ Another means of abstraction
 # Questions/Discussion
 Examples: https://github.com/microsoft/Flash_University
 
+
+<!-- notes
+    These concepts are not easy to separate from each other
+    They also provide multiple ways of doing things
+-->
 

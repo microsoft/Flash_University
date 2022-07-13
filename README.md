@@ -1,15 +1,15 @@
 # FLASH University Monorepo
 
-"delete this later"
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This repo contains all of the presentations, notes, examples, and other materials for
+the FLASH University.
 
-As the maintainer of this project, please make a few updates:
+As of 7/8/2022, we are currently going through: _CLR via C#_, and _Object Oriented Thought Process_.
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+## Contents
+
+- _CLR via C#_ (https://learning.oreilly.com/library/view/clr-via-c/9780735668737/)
+
+- _Object Oriented Thought Process_ (https://learning.oreilly.com/library/view/object-oriented-thought-process/9780135182130/)
 
 ## Contributing
 
