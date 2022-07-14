@@ -59,7 +59,7 @@ Many programming paradigms
 <div class="space" />
 OO compliments other paradigms
 
-<p class="questions">What makes a paradigm? When to use one or another></p>
+<p class="questions">What makes a paradigm? When to use one or another?</p>
 
 <!-- notes
     my answer: paradigm is a way of thinking/modeling
