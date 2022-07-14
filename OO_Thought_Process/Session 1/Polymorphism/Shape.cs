@@ -7,6 +7,15 @@ namespace Session_1.Polymorphism
      * 
      * Both Circle and Rectangle can be used as a Shape;
      * and when .Area is accessed it will use the correct implementation.
+     * 
+     * The important thing is that Area is declared abstract (or virtual) on
+     * the base Shape class. The abstract/virtual keyword makes C# look at
+     * the runtime type of the object and find the property/method there.
+     * 
+     * Without the abstract/virtual keyword, when a subclass is used as
+     * the base class it will just use the property/method definition
+     * on the base class - it won't look into the subclass.
+     * (See ImproperShape.cs and Program.cs for an example)
      */
     
     /**
@@ -15,6 +24,9 @@ namespace Session_1.Polymorphism
     public abstract class Shape
     {
         public abstract double Area { get; }
+
+        // or could be virtual
+        //public virtual double Area { get => 0; }
     }
 
     /**

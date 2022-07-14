@@ -58,6 +58,13 @@ class Program
          * This is another example of the separation of interface & implementation
          */
 
+        /*
+         * In Shape, Area is marked abstract (virtual would also work),
+         * so it uses the implementation in the subclass based on the
+         * runtime type of the object (eg Circle or Rectangle).
+         */
+        Console.WriteLine("shapes with proper polymorphism");
+
         List<Polymorphism.Shape> shapes = new List<Polymorphism.Shape>() {
             new Polymorphism.Circle(2),
             new Polymorphism.Rectangle(2, 4)
@@ -67,6 +74,18 @@ class Program
         {
             Console.WriteLine(" shape {0}: area={1:N}", i, shapes[i].Area);
         }
+
+        /*
+         * In ImproperShape, Area is not marked virtual or abstract,
+         * so it uses the implementation in the base class (returning 0).
+         */
+        Console.WriteLine("\nshapes with improper polymorphism");
+
+        Polymorphism.ImproperShape shapeCircle = new Polymorphism.ImproperCircle(2);
+        Polymorphism.ImproperShape shapeRect = new Polymorphism.ImproperRectangle(2, 4);
+        Console.WriteLine("    circle: {0:N} (should be 12.57)", shapeCircle.Area);
+        Console.WriteLine(" rectangle: {0:N} (should be 8.00)", shapeRect.Area);
+
     }
 
     public static void RunComposition() {
