@@ -23,7 +23,7 @@ style: |
 <!-- _footer: '**Covers Chapter 1: "Introduction"**' -->
 
 # Object-Oriented Thought Process
-**Session 1 - Introduction**
+**Session 1 - Fundamental OO Concepts**
 
 <!-- notes
 -->
@@ -43,7 +43,7 @@ Materials (eg code) in https://github.com/microsoft/Flash_University
 
 
 <!-- notes
-    questions/discussion welcome throughout
+    questions/discussion highly encouraged
     focus on conceptual things & design rather than implementation
     but questions on how it works in C# - ask!
 -->
@@ -59,10 +59,10 @@ Many programming paradigms
 <div class="space" />
 OO compliments other paradigms
 
-<p class="questions">What makes a paradigm?</p>
+<p class="questions">What makes a paradigm? When to use one or another></p>
 
 <!-- notes
-    answer: paradigm is a way of thinking/modeling
+    my answer: paradigm is a way of thinking/modeling
     
     language != paradigm
     most languages have aspects of multiple paradigms
@@ -102,6 +102,7 @@ OO compliments other paradigms
  - data & behavior are passed together
 
 <!-- notes
+    agree? disagree?
 -->
 
 
@@ -120,13 +121,9 @@ Objects control access to contained members
 
 Calling a method = "sending a message to the object"
 
-<p class="questions">What benefits/power come from building with objects?</p>
+<p class="questions">Is thinking in terms of objects natural for you?</p>
 
 <!-- notes
-    objects can be any size
-
-    answer:
-        encapsulation, composition (everthing an object?), abstraction, modularity
 -->
 
 
@@ -142,6 +139,7 @@ A class defines the attributes & behaviors for its objects
 Classes are pieces of code
 
 <!-- notes
+    Objects are runtime instantiations/manifestations of a class
 -->
 
 
@@ -174,12 +172,14 @@ Ideally, only what is necessary for interaction is exposed
 **Rule of Thumb:** Don't expose attributes directly
 > Security, testing, maintenance, etc
 
-<p class="questions">What are the benefits of this Rule of Thumb?</p>
+<p class="questions">What's the reason for this Rule of Thumb?</p>
 
 <!-- notes
-    answer:
+    my answer:
     attributes are part of the implementation (they are the state)
     exposing attributes ties the interface to the implementation
+
+    example: https://github.com/microsoft/Flash_University/tree/main/OO_Thought_Process/Session%201/Encapsulation
 -->
 
 
@@ -188,19 +188,22 @@ Ideally, only what is necessary for interaction is exposed
 
 # Inheritance
 
+Enables class to inherit attributes & methods of another class
+
 Allows abstracting out behavior from a class
 
 **"is-a relationship"**
 
 <div class="space" />
 
-Inheritance cascades
-
 Can be difficult to tell how much abstraction is required
 
 <p class="questions">How do you think about when to abstract?</p>
 
 <!-- notes
+    some languages have multiple inheritance (not C#)
+
+    example: https://github.com/microsoft/Flash_University/tree/main/OO_Thought_Process/Session%201/Inheritance
 -->
 
 
@@ -219,19 +222,17 @@ Polymorphism is typically implemented via inheritance
 
 > Example - Shapes
 
-<p class="questions">Anyone know any other kinds of Polymorphism?</p>
+<p class="questions"></p>
 
 <!-- notes
-    different objects have different implementations
+    different implementations of the same interface
 
     2 components
      - use subclass as superclass
      - and invoke method which invoke's the subclass's method
         ("abstract" or "virtual")
 
-    inheritance = "subtype polymorphism"
-
-    answer: ad-hoc, parametric, row
+    example: https://github.com/microsoft/Flash_University/tree/main/OO_Thought_Process/Session%201/Polymorphism
 -->
 
 
@@ -246,9 +247,18 @@ Another means of abstraction
 
 **"has-a relationship"**
 
-<p class="questions"></p>
+<p class="questions">When should you use Composition? When should you use Inheritance?</p>
 
 <!-- notes
+    my answer:
+        both means of abstraction
+        "is-a" vs "has-a"
+        if you don't want to expose some parts of the base class - composition
+        if you only want to refine behavior - inheritance
+
+    Shape > Rectangle > Square
+
+    example: https://github.com/microsoft/Flash_University/tree/main/OO_Thought_Process/Session%201/Composition
 -->
 
 
@@ -257,7 +267,7 @@ Another means of abstraction
 
 <!-- _class: centered invert -->
 
-# Questions/Discussion
+# Additional Questions/Discussion
 Examples: https://github.com/microsoft/Flash_University
 
 
