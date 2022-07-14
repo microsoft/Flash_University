@@ -75,7 +75,7 @@ marp: true
 ---
 ### C
 - Create a language based off of assembly that humans can write, have it compile into something that a program on the computer can execute
-- Eseentially give full control of the computer to the User
+- Essentially give full control of the computer to the User
 - have functions
 ### C++
 - superset of C with classes
@@ -83,7 +83,7 @@ marp: true
 - "I spent a large part of my life fixing these kinds of problems" -Michael McCann
 ---
 
-### What if there's more than one type of computer
+### What if there's more than one type of OS/hardware etc.
 - We write a program, how do we ensure it runs on Windows, Mac, Linux etc?
 - solution is still the same translation problem, just scaled up a level
 ---
@@ -123,7 +123,7 @@ Using the "Hello World" application, lets assume we have the following
     c. execute and store that function in dynamic memory (Richter has more indept steps about the JIT compiler but probably not necessary)
 4. Now we get Console.WriteLine again
 5. The function is already stored
-    a. no need to go back to the .dll to recretae it
+    a. no need to go back to the .dll to recreate it
 6. execute it from native code /endcontinueprogram
 
 ---
@@ -138,7 +138,7 @@ Using the "Hello World" application, lets assume we have the following
 ## Definitions
 - Namespace: I just think of it as the sub object /definition you're trying to access within a given FCL
 - Types: Types are basically the building blocks of C# --> second section is dedicated to understanding them. 
---
+---
 
 ### Common Language Runtime grab bag
 - Any language that can be converted into IL can run on it.
@@ -150,9 +150,9 @@ Using the "Hello World" application, lets assume we have the following
 ---
 
 ### Modules and Assemblies
-For our purposes, a module has a PE32 header, a CLR header, metadata, and the acutal IL code. 
+For our purposes, a module has a PE32 header, a CLR header, metadata, and the acutal IL code. (these will mean more as we go deeper)
 For more detail, see chart on page 5
-A module is not the smallest indepenendt unit.
+A module is not the smallest independent unit.
 An Assembly is the smallest unit of reuse; contains one or more modules.
 
 Module(s) + Resource(s) --> Compiler --> Assembly (Manifest saying whats in here) + [Module]
