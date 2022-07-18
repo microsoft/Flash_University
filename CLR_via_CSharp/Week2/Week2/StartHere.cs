@@ -1,4 +1,5 @@
 ﻿Console.WriteLine("Welcome to Week 2!");
+Console.WriteLine("Goal for this week is to go over ");
 
 //this is just calling the constructor in two ways. I prefer the first, but VS prefers the latter
 Donkey donkey = new Donkey("hee-haw");
