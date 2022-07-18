@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 Object O = new Object();
 Object R = new Object();
 
-//publicly available methods
+//publicly available methods (there are 2 protected methods, one for cloning and the other for deleting)
 Console.WriteLine(O.Equals(O));
 Console.WriteLine(O.Equals(R));
 

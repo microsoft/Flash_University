@@ -12,7 +12,8 @@ Donkey lessVerboseDonkey = new("hee");
 // Console.WriteLine(lessVerboseDonkey.Sound);
 
 /*
- * run ildasm in the developer powershell and see the differences
+ *
+ * run ildasm in the developer powershell and see the difference between both to see the type differences
  */
 
 /*

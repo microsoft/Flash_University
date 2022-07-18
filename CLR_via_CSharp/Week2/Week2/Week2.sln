@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week2", "Week2.csproj", "{A257F121-A8F4-4795-B1F9-25B7AFDA70EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectFunctions", "..\ObjectFunctions\ObjectFunctions.csproj", "{25F1A393-43A2-43DC-B0D3-B278F3A15F50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectFunctions", "..\ObjectFunctions\ObjectFunctions.csproj", "{25F1A393-43A2-43DC-B0D3-B278F3A15F50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastingTypesQuiz", "..\CastingTypesQuiz\CastingTypesQuiz.csproj", "{2E3B5334-8772-4FC2-B807-FB19C25593DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{25F1A393-43A2-43DC-B0D3-B278F3A15F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25F1A393-43A2-43DC-B0D3-B278F3A15F50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25F1A393-43A2-43DC-B0D3-B278F3A15F50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E3B5334-8772-4FC2-B807-FB19C25593DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3B5334-8772-4FC2-B807-FB19C25593DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3B5334-8772-4FC2-B807-FB19C25593DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3B5334-8772-4FC2-B807-FB19C25593DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
