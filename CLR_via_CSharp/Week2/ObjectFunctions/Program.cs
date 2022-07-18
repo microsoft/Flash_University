@@ -1,4 +1,4 @@
-﻿//this is a namespace --> essentially it's shorthand for us
+﻿//this is a namespace --> essentially it's shorthand for us; if the compiler can't find a function/method, it basically tried prepending all of the possible namespaces until one works
 using System.Runtime.CompilerServices;
 
 Object O = new Object();
@@ -15,8 +15,15 @@ Console.WriteLine(horse.GetType());
 
 
 
+//what do you expect here?
 Console.WriteLine(horse.ToString());
 Console.WriteLine(horse.GetHashCode());
+Console.WriteLine(horse2.ToString());
+Console.WriteLine(horse2.GetHashCode());
+
+//How do we get this to work-- default equality vs the equality we're using here
+Console.WriteLine(horse.Equals(horse2));
+
 
 //Guess the output, this is discussed more in the next chapter
 //Console.Write(horse2.Equals(horse));
@@ -27,4 +34,8 @@ class Horse
         return "not 'Horse'";
     }*/
 
+    // public override bool Equals(object? obj)
+    // {
+    //     return base.ToString().Equals(obj.ToString());
+    // }
 }
