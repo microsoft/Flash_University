@@ -8,6 +8,7 @@ Object R = new Object();
 Console.WriteLine(O.Equals(O));
 Console.WriteLine(O.Equals(R));
 
+
 Horse horse = new Horse();
 Horse horse2 = new Horse();
 
@@ -21,7 +22,7 @@ Console.WriteLine(horse.GetHashCode());
 Console.WriteLine(horse2.ToString());
 Console.WriteLine(horse2.GetHashCode());
 
-//How do we get this to work-- default equality vs the equality we're using here
+//How do we get this to work-- default equality vs the equality we're using here-- answer is fully explained in ch 5
 Console.WriteLine(horse.Equals(horse2));
 
 

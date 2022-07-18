@@ -1,5 +1,5 @@
 ﻿Console.WriteLine("Welcome to Week 2!");
-Console.WriteLine("Goal for this week is to go over ");
+Console.WriteLine("Goal for this week is to go over week2, object functions, invalid cast exceptions, and then the type safety quiz in that order. Use the project dropdown thingy to make your choices");
 
 //this is just calling the constructor in two ways. I prefer the first, but VS prefers the latter
 Donkey donkey = new Donkey("hee-haw");
