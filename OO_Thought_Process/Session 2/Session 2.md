@@ -64,10 +64,12 @@ Can it include any behavior?
 </p>
 
 <!-- notes
+    (book) toaster example
+
     my answer:
     **Interface can include _some_ observable behavior**
 
-    interface types do not contain everything that's observable
+    interface _types_ do not contain everything that's observable
         behavior can leak through
         (exceptions - which & when exactly do they occur)
 
@@ -90,7 +92,7 @@ Reusable classes tend to be more abstract
 
 Keep in mind the overarching purpose of a class/set of classes
 
-<p class="questions">What does it mean to "think abstractly" to you?</p>
+<p class="questions">How can you focus on "thinking abstractly"?</p>
 
 <!-- notes
     my answer: look for patterns of usage/functionality
@@ -116,8 +118,6 @@ Aim for "deep" classes
 
 Not from systems/technoligical viewpoint
 
-<div class="space" />
-
 Good design should maximize usability
 
 <p class="questions">Who are the "Users"?</p>
@@ -139,15 +139,16 @@ Environment often imposes limitations on what's possible
 
 <!-- notes
     environment imperfections/fault tolerance - possible failures
-    business priorities - eg cost
+    business priorities - eg cost, offline support
     latency/performance
+    usage pattern - eg concurrent operations
     full system environment - distributed? cloud?
 -->
 
 ---
 
 <!-- _class: centered -->
-# Not One "Best" Way
+# Not One "Best" Process
 
 <!-- notes
     subjective; everyone has their own process
