@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-Console.WriteLine("Primitive Types map their values directly to FCL (Framework class libraries) types");
+﻿Console.WriteLine("Primitive Types map their values directly to FCL (Framework class libraries) types");
 Console.WriteLine("In effect, this means that there are both multiple ways to get the same type and that some type errors might have slight inefficiencies");
 
 //This is a working definition, but atm, primitives are base classes that come w/ a framework upon which the rest of the program/types are built
@@ -37,4 +35,22 @@ Console.WriteLine(c);
 
 //biggest takeaway, there are multiple ways to represent something
 
+//How do we get around it? checks of course
 
+// Byte f = 100;
+// checked
+// {
+//     f += 200;
+// }
+// Console.Write("what is the value of f: {0}", f);
+
+checked
+{
+    Byte g = 100;
+    // g += 100;
+    // Console.WriteLine(g);
+    // g += 100;
+    // Console.WriteLine(g);
+}
+
+// what type of eexception is this
