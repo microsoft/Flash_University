@@ -43,3 +43,11 @@ e.x = 1;
 Console.WriteLine(e.Equals(f));
 
 
+InnocentClass z = new InnocentClass();
+SimpleClass y = new SimpleClass();
+Console.WriteLine(z.Equals(y));
+Console.WriteLine(y.Equals(z));
+
+Console.WriteLine(z.GetHashCode());
+Console.WriteLine(y.GetHashCode());
+
