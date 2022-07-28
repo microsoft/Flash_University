@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equals", "..\Equals\Equals.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashCode", "..\HashCode\HashCode.csproj", "{EE19246E-7B6B-468C-AB3D-E474BB4EB46A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxing", "..\Boxing\Boxing.csproj", "{D0E05B52-CA12-4A3C-8775-69733877E7D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamic", "..\Dynamic\Dynamic.csproj", "{9617CF77-B4A4-46B8-8FA9-A942188C9590}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{EE19246E-7B6B-468C-AB3D-E474BB4EB46A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE19246E-7B6B-468C-AB3D-E474BB4EB46A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE19246E-7B6B-468C-AB3D-E474BB4EB46A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0E05B52-CA12-4A3C-8775-69733877E7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E05B52-CA12-4A3C-8775-69733877E7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E05B52-CA12-4A3C-8775-69733877E7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E05B52-CA12-4A3C-8775-69733877E7D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9617CF77-B4A4-46B8-8FA9-A942188C9590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9617CF77-B4A4-46B8-8FA9-A942188C9590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9617CF77-B4A4-46B8-8FA9-A942188C9590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9617CF77-B4A4-46B8-8FA9-A942188C9590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿
 using Equals;
 // there are 2 equality checks
 
@@ -10,6 +9,7 @@ int b = 2;
 
 Console.WriteLine(a==b); //fair enough, they aren't the same number
 Console.WriteLine(a.Equals(b)); //also fair enough
+Console.WriteLine(ReferenceEquals(a,b));
 b= a; //based off of today, what happens here
 Console.WriteLine(a.Equals(b)); // same pointer, to same object, makes sense
 b= 3; //what is going on here?

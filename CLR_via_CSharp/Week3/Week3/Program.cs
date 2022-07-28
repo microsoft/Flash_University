@@ -8,3 +8,5 @@ Console.WriteLine("3. What does it mean to be type safe");
 //Every class knows it's exact type/there is only one type for a class/guaranteed behavior
 
 Console.WriteLine("This weeks order will be primitive types --> reference/value types --> boxing --> hashcodes and dynaic if we have time");
+
+//TODO.Srikar Boxing and Dynamic
