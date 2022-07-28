@@ -53,4 +53,17 @@ checked
     // Console.WriteLine(g);
 }
 
+// try
+// {
+//     checked
+//     {
+//         Byte g = 200;
+//         g += 100;
+//     }
+// }
+// catch(OverflowException)
+// {
+//     Console.WriteLine("Hey, you silly person, numbers don't go in circles... unless you're a donut mathematician");
+// }
+
 // what type of eexception is this
