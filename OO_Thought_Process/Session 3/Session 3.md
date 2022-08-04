@@ -117,7 +117,7 @@ Foundational object operations can become complicated
 
 
 <!-- notes
-    For a demo, see CLR via C# Week 2
+    For a demo, see CLR via C# Week 2 & 3
 -->
 
 ---
