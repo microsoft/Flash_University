@@ -3,13 +3,15 @@
 This repo contains all of the presentations, notes, examples, and other materials for
 the FLASH University.
 
-As of 7/8/2022, we are currently going through: _CLR via C#_, and _Object Oriented Thought Process_.
-
+As of 8/10/2022, we are currently going through: _CLR via C#_, _Object Oriented Thought Process_,
+and _Design Patterns: Elements of Reusable Object-Oriented Software_.
 ## Contents
 
 - _CLR via C#_ (https://learning.oreilly.com/library/view/clr-via-c/9780735668737/)
 
 - _Object Oriented Thought Process_ (https://learning.oreilly.com/library/view/object-oriented-thought-process/9780135182130/)
+
+- _Design Patterns: Elements of Reusable Object-Oriented Software_ (https://learning.oreilly.com/library/view/design-patterns-elements/0201633612/)
 
 ## Contributing
 
