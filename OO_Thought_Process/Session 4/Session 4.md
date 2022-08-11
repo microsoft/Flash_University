@@ -300,5 +300,7 @@ Examples: https://github.com/microsoft/Flash_University
 
 
 <!-- notes
+    review: https://github.com/rakirs2/CSharpChess
+    (at commit 45f1615 - main as of 8/4/2022)
 -->
 
