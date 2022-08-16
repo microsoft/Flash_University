@@ -3,6 +3,8 @@
 Defines the steps of an algorithm/operation, and lets
 subclasses override the underlying basic operations.
 
+https://learning.oreilly.com/library/view/design-patterns-elements/0201633612/ch05.html#page_325
+
 
 ## Scenario
 
