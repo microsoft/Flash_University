@@ -240,7 +240,7 @@ https://github.com/microsoft/Flash_University
 ---
 
 <!-- _class: centered invert -->
-<!-- _footer: 'Example at https://github.com/microsoft/Flash_University/tree/main/Design_Patterns/Template Method' -->
+<!-- _footer: 'Example at https://github.com/microsoft/Flash_University/tree/main/Design_Patterns/Template%20Method' -->
 
 # Design Pattern: Template Method
 
