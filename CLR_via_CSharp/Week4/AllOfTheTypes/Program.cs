@@ -32,4 +32,5 @@ public sealed class SomeType
     }
 
     public event EventHandler SomeEvent;
+
 }
