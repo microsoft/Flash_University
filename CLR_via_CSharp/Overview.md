@@ -45,3 +45,7 @@ marp: true
 #### Srikar's Opinions on why certain things are skipped:
 - Chapter 2,3 
     - A little more advanced/not as hands on for teaching a "C# course"
+- Chapter 5 
+    - boxing and unboxing 
+    - dynamic primitive types
+        I Want to get back to these, I think i'm ready to get this one this time around
