@@ -56,9 +56,9 @@ internal sealed class OtherRectangle
 
 //can't do this, you are not allowed to have instance field initializers in structs --> due to parameterless contstructors
 
-internal struct someValType
-{
-    private int a = 2;
+//internal struct someValType
+//{
+//    private int a = 2;
 
-}
+//}
 
