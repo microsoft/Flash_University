@@ -9,7 +9,14 @@ namespace ExtensionMethods
 {
     public static class StringBuilderExtensions
     {
-        public static Int32 IndexOf(StringBuilder sb, Char Value)
+        //public static Int32 IndexOf(StringBuilder sb, Char Value)
+        //{
+        //    for (int i = 0; i < sb.Length; i++)
+        //        if (sb[i] == Value) return i;
+        //    return -1;
+        //}
+
+        public static Int32 IndexOf(this StringBuilder sb, Char Value)
         {
             for (int i = 0; i < sb.Length; i++)
                 if (sb[i] == Value) return i;
