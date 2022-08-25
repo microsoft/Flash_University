@@ -4,3 +4,4 @@ using ConstructorsForReferenceTypes;
 
 Console.WriteLine("Hello, World!");
 ReferenceClass reference = new ReferenceClass();
+RandomTypeToLookAtInIl random = new RandomTypeToLookAtInIl();

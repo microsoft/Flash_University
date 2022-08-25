@@ -8,6 +8,10 @@ namespace ConstructorsForReferenceTypes
 {
     internal class ReferenceClass
     {
+        public ReferenceClass MemberwiseCopy()
+        {
+            return (ReferenceClass)this.MemberwiseClone();
+        }
         ////these are   not valid because constructors can't be inherited
         //virtual ReferenceClass()
         //{
@@ -33,5 +37,16 @@ namespace ConstructorsForReferenceTypes
         //{
         //    //will be overridden in a derived class
         //}
+
+    }
+    abstract class AbstractReferenceClass
+    {
+        //can't reproduce the "protected constructor"//TODO for later/question for the group pg 182
+    }
+
+    internal sealed class RandomTypeToLookAtInIl
+    {
+        private Int32 m_x = 6;
     }
 }
+
