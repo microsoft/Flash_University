@@ -49,3 +49,5 @@ marp: true
     - boxing and unboxing 
     - dynamic primitive types
         I Want to get back to these, I think i'm ready to get this one this time around
+- Chapter 8 
+    - missed type constructors on 187
