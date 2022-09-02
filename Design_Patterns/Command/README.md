@@ -3,6 +3,8 @@
 The command pattern encapsulates requests/operations into an object that can be
 passed around, stored, and invoked by something with no knowledge of what the command does.
 
+https://learning.oreilly.com/library/view/design-patterns-elements/0201633612/ch05.html#page_233
+
 
 ## Scenario
 
