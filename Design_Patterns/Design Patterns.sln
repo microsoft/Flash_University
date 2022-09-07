@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Command", "Command\Command.csproj", "{E4A6491F-3200-4A94-9876-70D4ACD1C41D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template Method", "Template Method\Template Method.csproj", "{204D9284-B343-4CD8-9897-029F1A5FFF5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template Method", "Template Method\Template Method.csproj", "{204D9284-B343-4CD8-9897-029F1A5FFF5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "State\State.csproj", "{106EEBB2-BC20-4C97-943D-6152F55C2731}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{204D9284-B343-4CD8-9897-029F1A5FFF5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{204D9284-B343-4CD8-9897-029F1A5FFF5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{204D9284-B343-4CD8-9897-029F1A5FFF5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106EEBB2-BC20-4C97-943D-6152F55C2731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106EEBB2-BC20-4C97-943D-6152F55C2731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106EEBB2-BC20-4C97-943D-6152F55C2731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106EEBB2-BC20-4C97-943D-6152F55C2731}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
