@@ -4,6 +4,8 @@ namespace State;
 
 /**
  * A simple CLI for creating and publishing notes
+ *
+ * All the command methods are in the "commands" region
  */
 public class Cli
 {
