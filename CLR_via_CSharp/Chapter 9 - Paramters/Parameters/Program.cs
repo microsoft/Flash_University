@@ -4,12 +4,12 @@ using System.Security.Cryptography.X509Certificates;
 public static class Arguments
 {
 
-    internal static Int32 s_n = 0;
+    private static Int32 s_n = 0;
     
     //These are Parameters
-    internal static void M(Int32 x = 9, String s = "A", DateTime dt = default(DateTime), Guid guid = new Guid())
+    private static void M(Int32 x = 9, String s = "A", DateTime dt = default(DateTime), Guid guid = new Guid())
     {
-        Console.WriteLine("x={0}, s={1}, dt={2}, guid={3}", x, s_n, dt, guid);
+        Console.WriteLine("x={0}, s={1}, dt={2}, guid={3}", x, s, dt, guid);
     }
 
     public static void Main()
