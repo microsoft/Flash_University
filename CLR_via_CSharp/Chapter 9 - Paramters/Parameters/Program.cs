@@ -3,12 +3,10 @@ using System.Security.Cryptography.X509Certificates;
 
 public static class Arguments
 {
-    //optional
-    //named
 
     internal static Int32 s_n = 0;
-    //Fundamentally what is going on here?
-
+    
+    //These are Parameters
     internal static void M(Int32 x = 9, String s = "A", DateTime dt = default(DateTime), Guid guid = new Guid())
     {
         Console.WriteLine("x={0}, s={1}, dt={2}, guid={3}", x, s_n, dt, guid);
@@ -25,6 +23,7 @@ public static class Arguments
         M(8, "X");
         //Here we're naming  dt and guid -- named: arguments if it helps you remember
 
+        //These are Arguments -- per our gods at Stack Overflow, "args are actual"
         M(5, guid: Guid.NewGuid(), dt: DateTime.Now);
 
         //this is a static variable set at 0. What does this look like in the CLR; what will happen here?
@@ -36,6 +35,7 @@ public static class Arguments
         M(s: (s_n++).ToString(), x: s_n++);
         
         //compiler doesn't necessarily read it that way
-
+        
+        
     }
 }
