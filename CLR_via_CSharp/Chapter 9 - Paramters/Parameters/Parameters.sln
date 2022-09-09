@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arguments", "Arguments.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultAndOptional", "..\DefaultAndOptional\DefaultAndOptional.csproj", "{630AD451-09C0-4BE2-8079-06F857D78F74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitlyTypedLocalVariables", "..\ImplicitlyTypedLocalVariables\ImplicitlyTypedLocalVariables.csproj", "{4686F7C6-78EF-4BA2-98C0-3FD5DEF8FD5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{630AD451-09C0-4BE2-8079-06F857D78F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{630AD451-09C0-4BE2-8079-06F857D78F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{630AD451-09C0-4BE2-8079-06F857D78F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4686F7C6-78EF-4BA2-98C0-3FD5DEF8FD5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4686F7C6-78EF-4BA2-98C0-3FD5DEF8FD5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4686F7C6-78EF-4BA2-98C0-3FD5DEF8FD5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4686F7C6-78EF-4BA2-98C0-3FD5DEF8FD5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
