@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitlyTypedLocalVariabl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassByReferenceAndValue", "..\PassByReferenceAndValue\PassByReferenceAndValue.csproj", "{68A1A8CB-B834-4D9F-8B63-BA88D4C500AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleArguments", "..\MultipleArguments\MultipleArguments.csproj", "{B4416C80-AD11-4845-8BE3-A5BFB45D0ABF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{68A1A8CB-B834-4D9F-8B63-BA88D4C500AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68A1A8CB-B834-4D9F-8B63-BA88D4C500AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68A1A8CB-B834-4D9F-8B63-BA88D4C500AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4416C80-AD11-4845-8BE3-A5BFB45D0ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4416C80-AD11-4845-8BE3-A5BFB45D0ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4416C80-AD11-4845-8BE3-A5BFB45D0ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4416C80-AD11-4845-8BE3-A5BFB45D0ABF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
