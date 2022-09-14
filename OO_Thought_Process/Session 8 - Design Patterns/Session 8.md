@@ -89,7 +89,7 @@ Benefits:
 3 Categories:
 - **Creational**: create objects for you (so you don't instantiate them directly)
 - **Structural**: compose groups of objects into larger structures
-- **Behavioral**: defines communication/flow between objects
+- **Behavioral**: defines how objects interact/distribute responsibility
 
 <!-- notes
 -->
