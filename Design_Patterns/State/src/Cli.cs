@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace State;
+﻿namespace State;
 
 /**
  * A simple CLI for creating and publishing notes
