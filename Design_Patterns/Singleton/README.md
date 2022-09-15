@@ -38,7 +38,8 @@ instance of a class (and make that instance easily accessbile).
 
 More specifically:
 
-- the Singleton class has complete control over how the unique instance is accessed
+- the Singleton class has complete control over how other classes access
+a Singleton instance
 
 - still allows subclassing and behavior refinement
 

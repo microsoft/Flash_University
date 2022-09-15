@@ -2,9 +2,18 @@
 
 /**
  * A simple CLI for transforming text based on a config
+ *
+ * Does not use the Config directly (but has two fields that
+ * use the Config)
  */
 public class Cli
 {
+    /**
+     * Both _configEditor and _transformer use the Config, but
+     * because of the "global point of access" (aka static `Get` method),
+     * both fields can access Config on their own - the Cli doesn't
+     * have to care about Config.
+     */
     private readonly ConfigEditor _configEditor = new ConfigEditor();
     private readonly TextTransformer _transformer = new TextTransformer();
 
@@ -125,7 +134,7 @@ public class Cli
 
         var transformed = _transformer.Transform(text);
 
-        Console.WriteLine($"transformed: {transformed}");
+        Console.WriteLine($"transformed ({_transformer.NumTimesTransformed}): {transformed}");
     }
     
     #endregion

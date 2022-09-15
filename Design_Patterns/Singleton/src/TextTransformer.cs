@@ -1,5 +1,11 @@
 ﻿namespace Singleton;
 
+/**
+ * Utility class for transforming text based on the config
+ *
+ * This class gets a Config instance on on-the-fly whenever
+ * a method needs it (hence there is no Config field).
+ */
 public class TextTransformer
 {
     public int NumTimesTransformed { get; private set; }

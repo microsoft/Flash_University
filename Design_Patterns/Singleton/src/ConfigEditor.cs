@@ -1,9 +1,14 @@
 ﻿namespace Singleton;
 
+/**
+ * Utility class for editing the Config
+ *
+ * This class gets a Config instance on creation, saves it
+ * to a field, and reuses it in all method calls.
+ */
 public class ConfigEditor
 {
     private readonly Config _config;
-
     public ConfigEditor()
     {
         _config = Config.Get();
