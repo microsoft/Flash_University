@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session 1", "Session 1\Session 1.csproj", "{B856600A-E11E-4A6B-BB9C-1BE21F7137B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session 1 - Fundamental OO Concepts", "Session 1 - Fundamental OO Concepts\Session 1 - Fundamental OO Concepts.csproj", "{B856600A-E11E-4A6B-BB9C-1BE21F7137B5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session 2", "Session 2\Session 2.csproj", "{AFE9163F-636D-404E-BECD-CF3C9F2D7135}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session 2 - Foundations of OO Design", "Session 2 - Foundations of OO Design\Session 2 - Foundations of OO Design.csproj", "{AFE9163F-636D-404E-BECD-CF3C9F2D7135}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session 3", "Session 3\Session 3.csproj", "{C17D9E00-F034-40ED-9519-B9E54F36E35E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session 3 - More OO Concepts", "Session 3 - More OO Concepts\Session 3 - More OO Concepts.csproj", "{C17D9E00-F034-40ED-9519-B9E54F36E35E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session 5", "Session 5\Session 5.csproj", "{B9E86330-1A65-4A1D-8037-70638B0F64C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session 5 - Mastering Inheritance and Composition", "Session 5 - Mastering Inheritance and Composition\Session 5 - Mastering Inheritance and Composition.csproj", "{B9E86330-1A65-4A1D-8037-70638B0F64C2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session 6", "Session 6\Session 6.csproj", "{8BAA1C5D-D1EA-4F4B-83BE-13ACF6F2C11B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session 6 - Creating Frameworks", "Session 6 - Creating Frameworks\Session 6 - Creating Frameworks.csproj", "{8BAA1C5D-D1EA-4F4B-83BE-13ACF6F2C11B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session 7", "Session 7\Session 7.csproj", "{F29BE103-D4AF-41FF-A4BC-05C08B1ACAA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session 7 - Building with Composition", "Session 7 - Building with Composition\Session 7 - Building with Composition.csproj", "{F29BE103-D4AF-41FF-A4BC-05C08B1ACAA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
