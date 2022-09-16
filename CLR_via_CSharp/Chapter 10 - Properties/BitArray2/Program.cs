@@ -1,4 +1,6 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Data.SqlTypes;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 
 BitArray2 ba = new BitArray2(14);
 
@@ -84,6 +86,20 @@ public sealed class BitArray2
             {
                 _byteArray[bitPosition / 8] = (Byte)(_byteArray[bitPosition / 8] &~ (1 << (bitPosition % 8)));
             }
+        }
+    }
+}
+
+public sealed class BitArray3
+{
+    [IndexerName("Bit")]
+    public Boolean this[Int32 bitPos]
+    {
+        get
+        {
+            return true;
+
+
         }
     }
 }
