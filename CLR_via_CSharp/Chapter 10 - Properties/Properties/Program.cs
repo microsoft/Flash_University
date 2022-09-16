@@ -13,7 +13,14 @@ e.Age = -5;
 
 //giving direct access (as we've seen in OO, allows for some unconstrained behavior)
 
+EncapsulatedEmployee encEmployee = new EncapsulatedEmployee();
+encEmployee.SetName("Jeff of Richter");
+Console.WriteLine(encEmployee.GetName());
 
+PropertyEmployee propEmployee = new PropertyEmployee()
+{
+5, "Jeff"
+}
 public sealed class Employee
 {
     public String Name;
@@ -74,6 +81,10 @@ public sealed class PropertyEmployee
                 m_age = value;
             } }
     }
+}
 
-  
+public sealed class LazyEmployee
+{
+    private String m_name { get; set; }
+    private Int32 m_age { get; set; }
 }
