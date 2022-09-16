@@ -1,9 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using Microsoft.VisualBasic;
-using System.Xml.Linq;
-
-Console.WriteLine("Hello, this is 'common way of doing things. Across Languages");
+﻿Console.WriteLine("Hello, this is 'common way of doing things. Across Languages");
 
 Employee e = new Employee();
 e.Name = "Jeff The Richter";
