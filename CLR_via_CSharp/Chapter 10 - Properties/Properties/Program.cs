@@ -20,6 +20,11 @@ public sealed class Employee
     public Int32 Age;
 }
 
+
+//downlsides, more methods to implement
+//more code to write
+
+
 public sealed class EncapsulatedEmployee
 {
     private String Name;
@@ -41,4 +46,34 @@ public sealed class EncapsulatedEmployee
     {
         Age = newAge;
     }
+}
+
+public sealed class PropertyEmployee
+{
+    private String m_name;
+    private Int32 m_age;
+
+    //value = the value passed in
+    //equivalent to set(value){}
+    public String Name
+    {
+        get { return m_name; }
+        set { m_name = value; }
+    }
+
+    public Int32 Age
+    {
+        get { return m_age; }
+        set {
+            if (m_age < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+            else
+            {
+                m_age = value;
+            } }
+    }
+
+  
 }
