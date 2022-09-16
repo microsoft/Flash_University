@@ -1,4 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+using Microsoft.VisualBasic;
+using System.Xml.Linq;
+
 Console.WriteLine("Hello, this is 'common way of doing things. Across Languages");
 
 Employee e = new Employee();
@@ -24,6 +28,29 @@ Console.WriteLine(System.DateTime.Now.Ticks);
 Console.WriteLine(System.DateTime.Now.Ticks);
 Console.WriteLine(System.DateTime.Now.Ticks);
 Console.WriteLine(System.DateTime.Now.Ticks);
+
+
+//OCI
+
+Employee donkey = new Employee() { Name = "donkey", Age = 50 };
+//Equivalent to:
+Employee cat = new Employee();
+cat.Name = "kitten";
+cat.Age = 3;
+
+
+Employee realCat = cat;
+
+//Console.WriteLine(donkey.Name);
+
+//string s = new Employee{Name = "srikar", Age = 28 }.GetHashCode().ToString();
+
+
+//Console.WriteLine(s);
+
+//String m = new LazyEmployee { _name = "srikar", _age = 28 }.GetHashCode().ToString();
+//Console.WriteLine(m);
+
 public sealed class Employee
 {
     public String Name;
@@ -88,6 +115,6 @@ public sealed class PropertyEmployee
 
 public sealed class LazyEmployee
 {
-    private String m_name { get; set; }
-    private Int32 m_age { get; set; }
+    private String _name { get;  set; }
+    private Int32 _age { get;  set; }
 }
