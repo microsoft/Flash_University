@@ -17,10 +17,13 @@ EncapsulatedEmployee encEmployee = new EncapsulatedEmployee();
 encEmployee.SetName("Jeff of Richter");
 Console.WriteLine(encEmployee.GetName());
 
-PropertyEmployee propEmployee = new PropertyEmployee()
-{
-5, "Jeff"
-}
+PropertyEmployee propEmployee = new PropertyEmployee();
+propEmployee.Age = 4;
+
+Console.WriteLine(System.DateTime.Now.Ticks);
+Console.WriteLine(System.DateTime.Now.Ticks);
+Console.WriteLine(System.DateTime.Now.Ticks);
+Console.WriteLine(System.DateTime.Now.Ticks);
 public sealed class Employee
 {
     public String Name;
