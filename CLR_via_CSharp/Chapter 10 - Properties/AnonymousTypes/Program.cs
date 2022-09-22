@@ -2,10 +2,12 @@
 
 var o1 = new {Name = "Orwell", Year = 1984};
 
+
 Console.WriteLine(o1.Name + " " +o1.Year);
 
 
 Console.WriteLine(o1.Name.GetType());
+Console.WriteLine(o1.GetType());
 
 //Most commonly used in LINQ (something i haven't seen/touched yet)v
 //What do we think the IL looks like
@@ -29,3 +31,7 @@ Console.WriteLine("Prime numbers less than 20: " +
     primes.Item7, primes.Rest.Item1);
 // The example displays the following output:
 //    Prime numbers less than 20: 2, 3, 5, 7, 11, 13, 17, and 19
+
+var composites = Tuple.Create(2, 4, 6, 8,9, 10, 12,  Tuple.Create(14,15) );
+
+Console.WriteLine(composites.Rest);

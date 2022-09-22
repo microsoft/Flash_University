@@ -36,6 +36,7 @@ cat.Age = 3;
 
 Employee realCat = cat;
 
+
 //Console.WriteLine(donkey.Name);
 
 //string s = new Employee{Name = "srikar", Age = 28 }.GetHashCode().ToString();
@@ -110,6 +111,11 @@ public sealed class PropertyEmployee
 
 public sealed class LazyEmployee
 {
-    private String _name { get;  set; }
+    public String _name { get;  private set; }
     private Int32 _age { get;  set; }
+
+    public LazyEmployee()
+    {
+        _name = "filler";
+    }
 }

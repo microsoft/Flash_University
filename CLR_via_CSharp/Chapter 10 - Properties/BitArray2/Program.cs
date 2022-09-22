@@ -1,35 +1,32 @@
-﻿using System.Data.SqlTypes;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
+﻿using System.Runtime.CompilerServices;
+using System.Security.AccessControl;
 
-BitArray2 ba = new BitArray2(14);
+//BitArray2 ba = new BitArray2(14);
 
-for (int i = 0; i < 14; i++)
-{
-    ba[i] = (i % 2 == 0);
-}
+//for (int i = 0; i < 14; i++)
+//{
+//    ba[i] = (i % 2 == 0);
+//}
 
-for (int i = 0; i < 14; i++)
-{
-   Console.WriteLine("Bit "+ i + " is " + (ba[i]?"on": "off"));
-}
-
+//for (int i = 0; i < 14; i++)
+//{
+//   Console.WriteLine("Bit "+ i + " is " + (ba[i]?"on": "off"));
+//}
 
 Int32 value = 1;
 
-//Console.WriteLine((value+1/7).GetType());
-//Console.WriteLine(1<<0);
-//uint x = 0b_1001;
+Console.WriteLine((value + 1 / 7).GetType());
+Console.WriteLine(1 << 0);
+uint x = 0b_1001;
+uint y = x >> 2;
+Console.WriteLine($"After:  {Convert.ToString(y, toBase: 2).PadLeft(4, '0'),4}");
 
-//uint y = x >>2;
-//Console.WriteLine($"After:  {Convert.ToString(y, toBase: 2).PadLeft(4, '0'),4}");
-
-//int i = 0;
-//while (i < 8)
-//{
-//    Console.WriteLine(1<<(i%8)!=0);
-//    i++;
-//}
+int i = 0;
+while (i < 8)
+{
+    Console.WriteLine(1 <<i);
+    i++;
+}
 
 public sealed class BitArray2
 {
