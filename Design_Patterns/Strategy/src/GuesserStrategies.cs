@@ -1,12 +1,21 @@
 ﻿namespace Strategy;
 
+/**
+ * A basic guessing strategy
+ *
+ * This is a "Concrete Strategy"
+ *
+ * It simply starts at the minimum guess value and goes one by one
+ * up to the max guess value. It runs out of guesses if it
+ * makes it to the max guess value.
+ */
 public class BasicGuesser : IGuesserStrategy
 {
     public int CurrentGuess { get; private set; } = NumberGuesser.Min;
 
     public bool HasMoreGuesses()
     {
-            return CurrentGuess < NumberGuesser.Max;
+        return CurrentGuess < NumberGuesser.Max;
     }
 
     public int NextGuess(GuessResponse previousResponse)
@@ -16,6 +25,14 @@ public class BasicGuesser : IGuesserStrategy
     }
 }
 
+/**
+ * A suboptimal guessing strategy that guesses randomly
+ *
+ * This is a "Concrete Strategy"
+ *
+ * This strategy guesses a random number each time (and does not avoid
+ * re-guessing an already guessed number). It never runs out of guesses.
+ */
 public class RandomGuesser : IGuesserStrategy
 {
     private readonly Random _random = new Random();
@@ -38,6 +55,15 @@ public class RandomGuesser : IGuesserStrategy
     }
 }
 
+/**
+ * A guessing strategy that performs a binary search
+ *
+ * This is a "Concrete Strategy"
+ *
+ * This strategy starts at the middle value, and based on the higher/lower
+ * responses, continually narrows the possible range via binary search.
+ * It runs out of guesses if the guess range becomes empty.
+ */
 public class BinarySearchGuesser : IGuesserStrategy
 {
     public int LowerBound { get; private set; } = NumberGuesser.Min;
