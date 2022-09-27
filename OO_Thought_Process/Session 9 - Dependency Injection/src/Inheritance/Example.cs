@@ -23,7 +23,7 @@ public class Dog : Mammal
 {
     public void Walk()
     {
-        Console.WriteLine("flying");
+        Console.WriteLine("walking");
     }
 }
 
