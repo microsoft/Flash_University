@@ -16,6 +16,7 @@ or library, to an existing class in the same application - the important
 part is that although the class's functionlity is exactly what you need,
 its interface doesn't match what you need it to match.
 
+
 ## Participants
 
 ### Objects
@@ -41,6 +42,31 @@ to perform the desired behavior
 (if necessary) to translate between the `Target` interface and the
 `Adaptee`'s interface
 
+
+### UML
+
+```mermaid
+classDiagram
+    class Client
+
+    class Target {
+        <<interface>>
+        Request()*
+    }
+    
+    class Adaptee {
+        SpecificRequest()
+    }
+    
+    class Adapter {
+        -adaptee: Adaptee
+        Request()
+    }
+
+    Target <.. Client
+    Adaptee *-- Adapter
+    Target <|.. Adapter
+```
 
 
 ## Benefits
