@@ -28,15 +28,19 @@ internal class MailManager
     {
         MailManager mm = new MailManager();
 
-        Fax fax = new Fax(mm);
+        mm.SimulateNewMail("Jeffrey", "Mom & Dad", "Happy Birthday.");
 
+        Fax fax = new Fax(mm);
         Pager pager = new Pager(mm);
 
-        mm.SimulateNewMail("Jeffrey", "Kristin", "I Love You!");
+        mm.SimulateNewMail("Jeffrey", "Mom & Dad", "1");
+
+        
 
         fax.Unregister(mm);
 
-        mm.SimulateNewMail("Jeffrey", "Mom & Dad", "Happy Birthday.");
+        mm.SimulateNewMail("Jeffrey", "Mom & Dad", "2");
+
     }
 
     private EventHandler<NewMailEventArgs> m_NewMail;
@@ -54,9 +58,10 @@ internal class MailManager
     }
     protected virtual void OnNewMail(NewMailEventArgs e)
     {
-        EventHandler<NewMailEventArgs> temp = Volatile.Read(ref m_NewMail);
-
-        if (temp != null) temp(this, e);
+        if (m_NewMail != null)
+        {
+            m_NewMail(this, e);
+        }
     }
 
     public void SimulateNewMail(String from, String to, String subject)

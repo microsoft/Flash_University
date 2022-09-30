@@ -17,6 +17,7 @@
             Pager pager = new Pager(DrKelso);
 
             DrKelso.GeneratePage("Kelso", "Dorian", "Where is Scooter");
+
         }
         //Haha, the first use of 'event' keyword
         private EventHandler<NewPageEventArgs> _newPage;
