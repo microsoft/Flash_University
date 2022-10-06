@@ -13,7 +13,7 @@ Let's look at the list of functionality/optimized algorithms in Systems.Collecti
 * Focus on what is a generic
 * how is it used
 * why we should use them/not be afraid of using classes that use them
-* 
+* How they look in the CLR
 
 ## Basics --> what is a 'generic'/what does it look like
 
@@ -23,6 +23,7 @@ The T is a type parameter and takes in any Type
 
 Naming conventions: naming guidleines for generic parameters 'TName'
 
-From PSD inside of our Pagefetch Test, one of the changes I made (with Michael's Guidance) was to change the type to accept TKey, TValue instead of just Ints
+	public class WriteBufferedPageSortedDictionary<TKey, TValue> : ExplicitBeginWriteBufferedSortedDictionary<TKey, TValue>
+		where TKey : IComparable<TKey>
 
-
+So we Definitely use them. Next step, should we use them.
