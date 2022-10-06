@@ -6,7 +6,10 @@ o = CreateInstance(t);
 
 t = typeof(DictionaryStringKey<Guid>);
 o = CreateInstance(t);
+var open = new Open<Int64, Int64>();
 
+
+var closed = new Dictionary<String, int>();
 Console.WriteLine("Object type =" + o.GetType());
 
 static object CreateInstance(Type t)
@@ -28,5 +31,13 @@ static object CreateInstance(Type t)
 
 // SO this guy is going to be a sealed class. It is a ___ type because of ?
 internal sealed class DictionaryStringKey<TValue> : Dictionary<string, TValue>
+{
+}
+
+internal sealed class Closed
+{
+}
+
+internal sealed class Open<TKey, TValue> : Dictionary<TKey,TValue>
 {
 }

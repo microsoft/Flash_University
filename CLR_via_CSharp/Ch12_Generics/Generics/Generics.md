@@ -45,16 +45,33 @@ So we Definitely use them. Next step, should we use them.
 * Some ideas, try catch as a way to figure out/debug code
     * We do the exact same thing with kill switches
 * backticks -> ` followed by number arity 
+* Open vs closed types in Ildasm
+
+## Generic Types and Inheritance
+* See Example
+
+But more importantly, understand CLR optimizations--> regardless of separate assembly, the CLR considers all reference type arguments to be identical
+
+## Do we think C# and the CLR support generic interfaces?
+* IEnumerator, IDisposable etc.
+## Generic Delegates exist
 
 ### Vocabulary for the faint of heart
 
 Arity - number of type parameters required by a type
 
-Constraints
+Constraints - 
 
-Type Objects - 
+Type Objects - internal data structures for every type used by an application
 
 Open Type - Type with something undefined
 
-Closed Type - Thype where actual data is passed in for all of the type arguments
+Closed Type - Type where actual data is passed in for all of the type arguments
 
+Code Explosion - Same as before --> but basically for every type/method combo, you'll get all of the IL
+
+Invariant -
+
+Contravariant - 
+
+Covariant -
