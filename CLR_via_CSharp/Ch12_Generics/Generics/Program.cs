@@ -6,11 +6,11 @@ ValueTypePerfTest(numberOfElements);
 ReferenceTypePerfTest(numberOfElements);
 
 
-static void ValueTypePerfTest(Int64 numberOfElements)
+static void ValueTypePerfTest(long numberOfElements)
 {
     using (new OperationTimer("List<Int32>"))
     {
-        var list = new List<long>() { };
+        var list = new List<long>();
         for (var i = 0; i < numberOfElements; i++)
         {
             // 'No Boxing' 
@@ -24,14 +24,14 @@ static void ValueTypePerfTest(Int64 numberOfElements)
 
     using (new OperationTimer("ArrayList<Int64>"))
     {
-        var arrayList= new ArrayList();
+        var arrayList = new ArrayList();
         for (var i = 0; i < numberOfElements; i++)
         {
             // boxing
             arrayList.Add(i);
 
             // unboxing
-            Int32 x = (Int32) (arrayList[i] ?? 0);
+            var x = (int)(arrayList[i] ?? 0);
         }
 
         // force gc, nice trick to remember
@@ -39,15 +39,15 @@ static void ValueTypePerfTest(Int64 numberOfElements)
     }
 }
 
-static void ReferenceTypePerfTest(Int64 numberOfElements)
+static void ReferenceTypePerfTest(long numberOfElements)
 {
     using (new OperationTimer("List<String>"))
     {
-        var list = new List<String>();
+        var list = new List<string>();
         for (var i = 0; i < numberOfElements; i++)
         {
             list.Add("X"); //boxing
-            String x = list[i]; //no
+            var x = list[i]; //no
         }
 
         // force gc, nice trick to remember
@@ -60,7 +60,7 @@ static void ReferenceTypePerfTest(Int64 numberOfElements)
         for (var i = 0; i < numberOfElements; i++)
         {
             list.Add("X"); //boxing
-            string? x = (String) (list[i] ?? "");//unboxing
+            var x = (string)(list[i] ?? ""); //unboxing
         }
 
         // force gc, nice trick to remember

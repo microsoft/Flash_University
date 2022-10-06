@@ -4,9 +4,9 @@ namespace GenericsPerf;
 
 internal class OperationTimer : IDisposable
 {
-    private long _collectionCount;
-    private Stopwatch _stopwatch;
-    private string _text;
+    private readonly long _collectionCount;
+    private readonly Stopwatch _stopwatch;
+    private readonly string _text;
 
     internal OperationTimer(string text)
     {
@@ -14,7 +14,6 @@ internal class OperationTimer : IDisposable
         PrepareForOperation();
         _text = text;
         _stopwatch = Stopwatch.StartNew();
-
     }
 
     public void Dispose()
