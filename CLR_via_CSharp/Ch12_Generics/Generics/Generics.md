@@ -27,3 +27,12 @@ Naming conventions: naming guidleines for generic parameters 'TName'
 		where TKey : IComparable<TKey>
 
 So we Definitely use them. Next step, should we use them.
+
+## Motivation for why they exist
+
+* Performance (See code example)
+* Algorithm Preservation
+
+
+## System.Array is the base class for all array types
+Lets actually look at this
