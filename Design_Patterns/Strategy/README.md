@@ -17,6 +17,7 @@ The Strategy pattern plays well with (basically is) Dependency Injection, since 
 the concrete algorithm implementation from the class that uses it, and requires that a concrete 
 instance be passed in from the outside code.
 
+
 ## Examples
 
 Here are some example use cases of the Strategy pattern:
@@ -34,6 +35,7 @@ travel time & monetary cost
 - different golf clubs - all are used the same way and have the same general function, but
 each club is performs best in a different scenario
 
+
 ## Participants
 
 ### Objects
@@ -46,6 +48,7 @@ the `Strategy` interface
 - `Context`: class that gets configured with a `Strategy` and invokes
 the `Strategy` operaions
 
+
 ### Interactions
 
 - the `Strategy` recieves all the required data directly from the `Context` (the `Strategy` can
@@ -57,6 +60,7 @@ Dependency Injection)
 
 - most commonly, the `Strategy` only contains one method (to perform the operation); though
 sometimes the `Strategy` can contain multiple, related methods 
+
 
 ### UML
 
@@ -85,6 +89,7 @@ classDiagram
     Strategy <.. ConcreteStrategyB
 ```
 
+
 ## Consequences
 
 ### Benefits
@@ -100,6 +105,7 @@ different algorithm implementation
 
 - the algorithm implementation details are isolated from the calling code, and each algorithm
 is cleanly separated from the other algorithms
+
 
 ### Pitfalls
 
