@@ -70,8 +70,8 @@ Closed Type - Type where actual data is passed in for all of the type arguments
 
 Code Explosion - Same as before --> but basically for every type/method combo, you'll get all of the IL
 
-Invariant -
+Invariant - Generic type parameter can't be changed
 
-Contravariant - 
+Contravariant - can be changed from a class to a derived class -- look for 'in' --> only in input
 
-Covariant -
+Covariant -can change from one clas sot a base class (only in output)
