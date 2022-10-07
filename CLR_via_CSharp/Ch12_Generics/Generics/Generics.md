@@ -12,7 +12,7 @@ Let's look at the list of functionality/optimized algorithms in Systems.Collecti
 ## Goals
 * As usual, Jeffrey got a little carried away with specifics.
 * Focus on what is a generic
-* How is it used
+* How are they used
 * What it might look like in our code base (PSD)
 * why we should use them/not be afraid of using classes that use them
 * How they look in the CLR
@@ -42,7 +42,7 @@ So we definitely use them. Next step, should we use them.
 * how to keep track of GC cycles
 * Keep track of time w/ examples
 * Why is there really no performance loss on reference types while a huge loss in value types?
-* 
+
 ## System.Array is the base class for all array types
 
 ## Open and Closed Example
@@ -92,8 +92,24 @@ They allow for multiple different types of arguments in a method. Jeff uses swap
 
 ## Constraints
 
+General rule is that they limit things on a type
 
+1. Primary constraints
+    * Type Parameter gets 0 or 1 primary constraint. It's an unsealed, nonspecial reference type
+	
+2. Secondary Constraints
+    * Type Parameter gets 0 or moresecondary constraints where constraints represent interfaces
+	* There exists a 'parameter constraint which we will say exists and if you encounter it, you can writ to me how angry you were that we didn't cover it
 
+3. Constructor constraints
+    * Type Parameter gets 0 or 1 constructor constraints
+	* can't be a struct
+#### Guess which one is which
+	private static List ConstraintOne<T, TBase> (IList<T> list) where T: IRobot
+	internal sealed class ConstraintTwo<T> where T: Stream{}
+	internal sealed class ConstraintThree<T> where T: new(){}
+
+* There is special behaviors for null and struct/class etc. but that's well beyond my scope
 ### Vocabulary for the faint of heart
 
 Arity - number of type parameters required by a type
