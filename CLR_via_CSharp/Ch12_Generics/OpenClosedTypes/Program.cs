@@ -6,10 +6,10 @@ o = CreateInstance(t);
 
 t = typeof(DictionaryStringKey<Guid>);
 o = CreateInstance(t);
-var open = new Open<Int64, Int64>();
+var open = new Open<long, long>();
 
 
-var closed = new Dictionary<String, int>();
+var closed = new Dictionary<string, int>();
 Console.WriteLine("Object type =" + o.GetType());
 
 static object CreateInstance(Type t)
@@ -38,6 +38,6 @@ internal sealed class Closed
 {
 }
 
-internal sealed class Open<TKey, TValue> : Dictionary<TKey,TValue>
+internal sealed class Open<TKey, TValue> : Dictionary<TKey, TValue>
 {
 }
