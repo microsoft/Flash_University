@@ -90,11 +90,15 @@ So because we have in and out, the compiler is able to say that the in (in this 
 ## How do Generics work with methods?
 They allow for multiple different types of arguments in a method. Jeff uses swap
 
+## Constraints
+
+
+
 ### Vocabulary for the faint of heart
 
 Arity - number of type parameters required by a type
 
-Constraints - 
+Constraints - Fundamentally, a way to guarantee type safety and operability inside of a function while using generics/verify what's going in is operable
 
 Type Objects - internal data structures for every type used by an application
 
