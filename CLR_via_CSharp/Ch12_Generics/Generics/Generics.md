@@ -1,19 +1,24 @@
 # Generics
 
 ## Previous questions
+* Can you auto-implemented event property
+
 
 Fundamentally, we want to be able to reuse code and use optimized structures/objects for our programming.
 
-*Generics* are a mechinism that provides algorithm reuse
+*Generics* are a mechanism that provides algorithm reuse
 
 Let's look at the list of functionality/optimized algorithms in Systems.Collections.Generic
 
 ## Goals
 * As usual, Jeffrey got a little carried away with specifics.
 * Focus on what is a generic
-* how is it used
+* How is it used
+* What it might look like in our code base (PSD)
 * why we should use them/not be afraid of using classes that use them
 * How they look in the CLR
+* What is a constraint and what problem do they solve
+
 
 ## Basics --> what is a 'generic'/what does it look like
 
@@ -55,6 +60,30 @@ But more importantly, understand CLR optimizations--> regardless of separate ass
 ## Do we think C# and the CLR support generic interfaces?
 * IEnumerator, IDisposable etc.
 ## Generic Delegates exist
+## Delegate and Interface variance
+	public delegate TResult Func<in T, out TResult>(T arg);
+
+in = contra-variant
+
+out = covariant
+
+invariant--> everything else
+
+	Func<Object, ArgumentException> fn1 = null;
+
+	Func<String, Exception> fn2 = fn1;
+
+	Func<String, Execption> fn2 = fn1;
+	Exception e = fn2("");
+
+I really don't understand this?
+
+Per Jeff, we are basically casting fn1 into fn2. fn1 takes in object and returns an arg exception, fn2 takes in a string and returns and exception
+
+
+So because we have in and out, the compiler is able to say that the in (in this case String in f2) can be compiled b/c it is a derived class of Object (contravariant) and the out can be a broader type of exception or the covariant
+
+## Can you return a Generic Type?
 
 ### Vocabulary for the faint of heart
 
