@@ -18,6 +18,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Variance", "..\Variance\Var
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods", "..\Methods\Methods.csproj", "{2A338856-EAA7-4E54-9FC0-AB0636437478}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripleSwap", "..\TripleSwap\TripleSwap.csproj", "{41EA0DC8-914F-4C16-A668-212C9177952E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotThis", "..\TypeIdentity\NotThis.csproj", "{7F38C3AD-4AE4-44D1-9D59-11B0253790A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +48,14 @@ Global
 		{2A338856-EAA7-4E54-9FC0-AB0636437478}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A338856-EAA7-4E54-9FC0-AB0636437478}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A338856-EAA7-4E54-9FC0-AB0636437478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41EA0DC8-914F-4C16-A668-212C9177952E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41EA0DC8-914F-4C16-A668-212C9177952E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41EA0DC8-914F-4C16-A668-212C9177952E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41EA0DC8-914F-4C16-A668-212C9177952E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F38C3AD-4AE4-44D1-9D59-11B0253790A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F38C3AD-4AE4-44D1-9D59-11B0253790A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F38C3AD-4AE4-44D1-9D59-11B0253790A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F38C3AD-4AE4-44D1-9D59-11B0253790A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

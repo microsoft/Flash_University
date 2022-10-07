@@ -1,8 +1,7 @@
 # Generics
 
 ## Previous questions
-* Can you auto-implemented event property
-
+* Can you auto-implemented event property (need a little longer on this one)
 
 Fundamentally, we want to be able to reuse code and use optimized structures/objects for our programming.
 
@@ -31,7 +30,7 @@ Naming conventions: naming guidleines for generic parameters 'TName'
 	public class WriteBufferedPageSortedDictionary<TKey, TValue> : ExplicitBeginWriteBufferedSortedDictionary<TKey, TValue>
 		where TKey : IComparable<TKey>
 
-So we Definitely use them. Next step, should we use them.
+So we definitely use them. Next step, should we use them.
 
 ## Motivation for why they exist
 
@@ -43,6 +42,7 @@ So we Definitely use them. Next step, should we use them.
 * how to keep track of GC cycles
 * Keep track of time w/ examples
 * Why is there really no performance loss on reference types while a huge loss in value types?
+* 
 ## System.Array is the base class for all array types
 
 ## Open and Closed Example
@@ -60,6 +60,9 @@ But more importantly, understand CLR optimizations--> regardless of separate ass
 ## Do we think C# and the CLR support generic interfaces?
 * IEnumerator, IDisposable etc.
 ## Generic Delegates exist
+
+## Generic Type Identity
+don't do what's int he example
 ## Delegate and Interface variance
 	public delegate TResult Func<in T, out TResult>(T arg);
 
@@ -83,7 +86,9 @@ Per Jeff, we are basically casting fn1 into fn2. fn1 takes in object and returns
 
 So because we have in and out, the compiler is able to say that the in (in this case String in f2) can be compiled b/c it is a derived class of Object (contravariant) and the out can be a broader type of exception or the covariant
 
-## Can you return a Generic Type?
+
+## How do Generics work with methods?
+They allow for multiple different types of arguments in a method. Jeff uses swap
 
 ### Vocabulary for the faint of heart
 
@@ -104,3 +109,7 @@ Invariant - Generic type parameter can't be changed
 Contravariant - can be changed from a class to a derived class -- look for 'in' --> only in input
 
 Covariant -can change from one clas sot a base class (only in output)
+
+### Other links
+Best answer to Ref vs out
+https://stackoverflow.com/questions/16196940/whats-the-difference-between-ref-vs-out-parameter
