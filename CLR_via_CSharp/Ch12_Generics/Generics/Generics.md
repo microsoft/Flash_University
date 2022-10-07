@@ -133,3 +133,6 @@ Covariant -can change from one clas sot a base class (only in output)
 ### Other links
 Best answer to Ref vs out
 https://stackoverflow.com/questions/16196940/whats-the-difference-between-ref-vs-out-parameter
+
+### How compilers work
+https://learn.microsoft.com/en-us/shows/Seth-Juarez/Anders-Hejlsberg-on-Modern-Compiler-Construction
