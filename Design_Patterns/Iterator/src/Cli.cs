@@ -1,4 +1,6 @@
-﻿namespace Iterator;
+﻿using Iterator.Iterables;
+
+namespace Iterator;
 
 /**
  * A simple CLI for printing out collections

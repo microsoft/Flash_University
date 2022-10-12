@@ -1,4 +1,4 @@
-﻿namespace Iterator;
+﻿namespace Iterator.Iterables;
 
 /*
  * Exercise: make FibonacciSequence iterable

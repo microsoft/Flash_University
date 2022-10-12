@@ -1,5 +1,4 @@
-﻿
-namespace Iterator;
+﻿namespace Iterator.Iterables;
 
 /*
  * Exercise: implement the method necessary to make the iterator work
