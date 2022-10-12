@@ -175,9 +175,9 @@ Design is subjective, and all about balance & trade-offs
 ---
 
 <!-- _class: centered invert -->
-<!-- _footer: 'Example at https://github.com/microsoft/Flash_University/tree/main/Design_Patterns/???' -->
+<!-- _footer: 'Example at https://github.com/microsoft/Flash_University/tree/main/Design_Patterns/Iterator' -->
 
-# Design Pattern: ???
+# Design Pattern: Iterator
 
 <!-- notes
 -->
