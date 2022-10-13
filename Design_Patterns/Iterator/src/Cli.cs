@@ -88,6 +88,8 @@ public class Cli
             // uncomment when these are implemented
             //case "lazy-list":
             //    return LazyListGenerator.Generate(length);
+            //case "chunked-list":
+            //    return ChunkedListGenerator.Generate(length);
             //case "fibonacci":
             //    return FibonacciGenerator.Generate(length);
             default:
