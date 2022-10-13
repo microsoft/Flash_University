@@ -1,5 +1,10 @@
 ﻿namespace Iterator;
 
+/*
+ * Exercise: add additional functionality to the IIterator interface
+ * (suggestion: `Reset()` or `SkipN()`)
+ */
+
 /**
  * A simple iterator interface
  *

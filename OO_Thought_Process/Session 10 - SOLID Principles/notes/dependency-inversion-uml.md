@@ -18,7 +18,7 @@ In this example, we have a `Mammal` base class with two subclasses, `Dog` and
 classDiagram
     class Mammal {
         <<abstract>>
-        +MakeNoise()
+        +MakeNoise()*
     }
 
     Mammal <|-- Dog
@@ -42,12 +42,12 @@ Here we separate out the mammal behaviors from the mammals themselves.
 classDiagram
     class Mammal {
         <<abstract>>
-        +MakeNoise()
+        +MakeNoise()*
     }
 
     class MakingNoise {
         <<abstract>>
-        +MakeNoise()
+        +MakeNoise()*
     }
 
     Mammal <|-- Dog

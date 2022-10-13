@@ -156,7 +156,7 @@ Everything inside an interface should be very closely related.
 
 <div class="space" />
 
-**Example** <span class="pad">**&middot;**</span> [UML](./notes/???-uml.md) <span class="pad">**&middot;**</span> [Code](../OO%20Materials.sln)
+**Example** <span class="pad">**&middot;**</span> [UML](./notes/???-uml.md)
 
 <!-- notes
 -->
