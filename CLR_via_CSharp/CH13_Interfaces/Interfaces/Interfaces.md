@@ -12,6 +12,7 @@
 - when should I use an abstract class vs an interface
 - Can you have other things in an interface 
 - What is reflection
+- how do you hadd properties to an interface?
 
 ## Reviews?
 

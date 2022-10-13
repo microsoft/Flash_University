@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces.csproj", "{6EC7D09A-0DEC-4FFB-A069-B00F47080D75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces.csproj", "{6EC7D09A-0DEC-4FFB-A069-B00F47080D75}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AEA3C948-0883-4805-B8BE-9951D0BE74C0}"
 	ProjectSection(SolutionItems) = preProject
 		Interfaces.md = Interfaces.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessPieces", "..\ChessPieces\ChessPieces.csproj", "{C1E35EA0-B910-4FAF-B24B-A4F8BDD3A971}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{6EC7D09A-0DEC-4FFB-A069-B00F47080D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EC7D09A-0DEC-4FFB-A069-B00F47080D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EC7D09A-0DEC-4FFB-A069-B00F47080D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1E35EA0-B910-4FAF-B24B-A4F8BDD3A971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1E35EA0-B910-4FAF-B24B-A4F8BDD3A971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1E35EA0-B910-4FAF-B24B-A4F8BDD3A971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1E35EA0-B910-4FAF-B24B-A4F8BDD3A971}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
