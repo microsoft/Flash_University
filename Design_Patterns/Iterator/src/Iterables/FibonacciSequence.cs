@@ -4,6 +4,9 @@
  * Exercise: make FibonacciSequence iterable
  */
 
+/**
+ * A "collection" representing the Fibonacci sequence
+ */
 public class FibonacciSequence
 {
     public FibonacciSequence(int length)

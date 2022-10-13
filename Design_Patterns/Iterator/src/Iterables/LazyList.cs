@@ -4,6 +4,9 @@
  * Exercise: make LazyList iterable
  */
 
+/**
+ * A list that fetches each item lazily
+ */
 public class LazyList<T>
 {
     private readonly List<T> _elements;

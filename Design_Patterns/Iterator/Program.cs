@@ -30,10 +30,10 @@
  *      The `Aggregate` interface
  *      Provides a method to create a new iterator
  *
- *  - LinkedList, LazyList, FibonacciSequence (LinkedList.cs, LazyList.cs, FibonacciSequence.cs)
+ *  - LinkedList, etc (LinkedList.cs, etc)
  *      The `ConcreteAggregate` subclasses, each has a corresponding `ConcreteIterator`
  *
- *  - LinkedListIterator, LazyListIterator, FibonacciIterator (LinkedList.cs, LazyList.cs, FibonacciSequence.cs)
+ *  - LinkedListIterator, etc (LinkedList.cs, etc)
  *      The `ConcreteIterator` subclasses, each corresponds to a `ConcreteAggregate`
  */
 
