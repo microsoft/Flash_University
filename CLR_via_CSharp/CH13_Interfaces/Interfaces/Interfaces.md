@@ -16,9 +16,8 @@
 ## Reviews/plan ahead
 - I do want to have some dedicated time for going back over chapters 1-3 
 - I am planning on putting in some 'review as we go content' if some material repeats
-- my 'theory of learning' 
 ### Schedule
-- 10/14 14 Chars and strings and text... oh my
+- 10/14 14 Chars and strings and text... oh my (seriously, this thing is 50 pages)
 - 10/21 15 Enumerated Types and Bit Flags
 - 10/28 16 Arrays
 - 11/4 17 Delegates
@@ -31,13 +30,12 @@ After that, we'll probably jump to threading 26, 27, 28, 29, and 30. I suspect t
 
 And if Flash univeristy still exists after that, we'll finish up part IV core facilities (20, 22, 23, 24 and 25 (seems usless))
 
-
-
 ## Fundamentals of Interfaces
 - a common set of instructions that we can reuse. 
 - More concretely, if we know an interface is implemented in an object/type, we know that that object or type can fulfill that function
 - If you only remember one thing, the CLR does not support multiple inheritance. Instead, it allows multiple inheritances via Interfaces --> one class can implment n  interfaces.
-
+- If you remember one more thing, it's how Interfaces Work
+- 
 ## Disagreement with Jeffrey
 - I think understanding how they work kind of logically answers most of the questions posed.
 - See Powerpoint
@@ -46,7 +44,6 @@ And if Flash univeristy still exists after that, we'll finish up part IV core fa
 - When inheriting a class, we inherit the method signatures
 - implementation of the methods
     - Kind fo ties in nicely to what we saw last week with constraints. Constraints didn't modify method signature or implementation so they weren't 'new' or 'different' in the eyes of the CLR
-- Jeffrey's definition of an interface = just a set of method signatures
 ## Defining an Interface
 - Interfaces can do a little more than just definte method signatures
 - He points us to IDisposable which we saw lastweek --> the method used to dispose of something
@@ -83,7 +80,7 @@ And if Flash univeristy still exists after that, we'll finish up part IV core fa
 
 Virtual - Can be overridden by a derived class
 
-Interface - 
+Interface - Per Jeffrey, 'just a set of methods
 
 Sealed - Can't be overridden by a derived class
 
