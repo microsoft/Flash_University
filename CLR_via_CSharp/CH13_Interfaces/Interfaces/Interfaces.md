@@ -65,7 +65,9 @@ And if Flash univeristy still exists after that, we'll finish up part IV core fa
 
 ## Generic Interfaces
 - The exist, use em
-- help prevent boxing
+- help prevent boxing, if we remember last week, boxing was pretty expensive
+- Compile time safety
+- can implement same interface multiple times as long as different type parameters are used
 
 ## Generics and Interface Constraints
 -
