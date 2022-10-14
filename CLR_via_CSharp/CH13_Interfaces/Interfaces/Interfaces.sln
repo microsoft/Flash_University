@@ -16,7 +16,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplicitExplicit", "..\Impl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaception", "..\Interfaception\Interfaception.csproj", "{9A7E4EB2-0CC6-4D64-9F03-A01FF7A9FD82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiInterfaceSameSignature", "..\MultiInterfaceSameSignature\MultiInterfaceSameSignature.csproj", "{B158974D-5221-475B-A106-856539A1A865}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiInterfaceSameSignature", "..\MultiInterfaceSameSignature\MultiInterfaceSameSignature.csproj", "{B158974D-5221-475B-A106-856539A1A865}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
