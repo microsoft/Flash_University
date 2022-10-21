@@ -1,4 +1,4 @@
-﻿String k = "Hello World";
+﻿var k = "Hello World";
 Console.WriteLine(k);
 
-Object o = new object();
+var o = new object();

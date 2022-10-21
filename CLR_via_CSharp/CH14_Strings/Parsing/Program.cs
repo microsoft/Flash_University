@@ -3,10 +3,10 @@
 //simple type
 try
 {
-    int x = int.Parse("123", NumberStyles.None, null);
+    var x = int.Parse("123", NumberStyles.None, null);
     Console.WriteLine(x);
 }
-catch(FormatException)
+catch (FormatException)
 {
     Console.WriteLine("Invalid format");
 }

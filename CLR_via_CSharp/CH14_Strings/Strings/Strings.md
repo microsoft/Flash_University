@@ -19,6 +19,7 @@
 ## System.String
 - you don't need a new operateor to create a new string 
 - It is a primitive type
+- Reference type w/ value type properties
 - in il, you'll see a ldstr rather than a newobj ctor for construction\
 - There's some important stuff on unsafe strings/concatenation/escapes
     - \ is the default escape character
@@ -50,4 +51,15 @@
 - Jeffrey's note, "parse in date time wasn't specific enough --> see example"
 
 ## encodings
-- 
+- basically converting between chars and bytes
+- as strings are always 16 bit unicode values, this is relatively easy
+- fundamentally, as seen above, every char will have a corresponding unicode value
+- This is a little bit out of my ball park, so we're just going to use Jeffrey's Examples
+
+## Secure STring
+- remember that strings stay in memory until GC'd 
+- How do we handle this 
+    - give a wrapper class with a dispose?? hooray
+
+## String Interpolations
+- https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated
