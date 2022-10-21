@@ -8,7 +8,6 @@
     - String min/max
 - transformations of a string
 - hexadecimal basics
-- what is a culture
 - how are strings represented in the CLR
 - Casting/converstions
 
@@ -36,3 +35,19 @@
 
 ## String pooling
 - using each unique string literal only once
+
+## String Methods
+- length, chars, getenumerator, tocahrarray,contains,indexof,lastindexof,indexofany,lastindexofany
+- also get clone, copy, copyto, substring, and to string
+
+## Stringbuilder
+- recommended way to build strings as strings are immutable 
+
+## parse (opposite of tostring)
+- take a string and get it's object representation
+- classic example today is probably parsing a json into an object
+- everyone's favorite step in building a website.
+- Jeffrey's note, "parse in date time wasn't specific enough --> see example"
+
+## encodings
+- 
