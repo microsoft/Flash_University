@@ -14,10 +14,10 @@
 ## three main ways to switch between numeric types and char
 1. Casting
 2. Convert type
-2. Iconvertible
+2. IConvertible
 
 ## System.String
-- you don't need a new operateor to create a new string 
+- you don't need a new operator to create a new string 
 - It is a primitive type
 - Reference type w/ value type properties
 - in il, you'll see a ldstr rather than a newobj ctor for construction\
@@ -38,7 +38,7 @@
 - using each unique string literal only once
 
 ## String Methods
-- length, chars, getenumerator, tocahrarray,contains,indexof,lastindexof,indexofany,lastindexofany
+- length, chars, GetEnumerator, ToCharArray,Contains,IndexOf,lastindexof,indexofany,lastindexofany
 - also get clone, copy, copyto, substring, and to string
 
 ## Stringbuilder
@@ -56,7 +56,7 @@
 - fundamentally, as seen above, every char will have a corresponding unicode value
 - This is a little bit out of my ball park, so we're just going to use Jeffrey's Examples
 
-## Secure STring
+## Secure String
 - remember that strings stay in memory until GC'd 
 - How do we handle this 
     - give a wrapper class with a dispose?? hooray
