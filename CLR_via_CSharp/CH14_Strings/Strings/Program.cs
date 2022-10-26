@@ -18,7 +18,7 @@ var a = 'a';
 Console.WriteLine(a);
 Console.WriteLine((int)a);
 
-//  this is hexadecimal or unicode?
+// this is hexadecimal or unicode?
 // let's find it on the internet
 var d = char.GetNumericValue('\u00bc');
 Console.WriteLine(d);

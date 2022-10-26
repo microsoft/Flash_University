@@ -3,18 +3,23 @@
 ## Questions from last time 
 - none I can remember
 
+
+## questions for next time
+* exact parse
 ## Things to look for today
 - representations of a string
     - String min/max
 - transformations of a string
+- Best practices for strings
 - hexadecimal basics
 - how are strings represented in the CLR
 - Casting/converstions
+- Security
 
 ## three main ways to switch between numeric types and char
 1. Casting
 2. Convert type
-2. IConvertible
+3. IConvertible
 
 ## System.String
 - you don't need a new operator to create a new string 

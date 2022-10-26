@@ -1,15 +1,16 @@
 ﻿char f;
 int i;
+
+// casting
 f = (char)97;
 
 Console.WriteLine(f);
 
-
-//what will this print, which conversion mechanism did we use?
+// what will this print, which conversion mechanism did we use?
 i = f;
 Console.WriteLine(i);
 
-//Jeffrey unicode flex
+// Jeffrey unicode flex
 var b = unchecked((char)(65536 + 98));
 Console.WriteLine(b);
 
@@ -20,7 +21,7 @@ Console.WriteLine(b);
 
 try
 {
-    f = Convert.ToChar(87902347509423875);
+    f = Convert.ToChar(8790234750942387588);
     Console.WriteLine(f);
 }
 catch (OverflowException)

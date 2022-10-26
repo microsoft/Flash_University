@@ -19,6 +19,8 @@ Console.WriteLine(date);
 var date2 = DateTime.Parse("2022-10-21");
 Console.WriteLine(date2);
 
+String dateString = "18/08/2015 06:30:15.006542";
+string format = "dd/MM/yyyy HH:mm:ss.ffffff";
 
-//var date3 = DateTime.ParseExact("2022-10-21", "YYYY-MM-DD", CultureInfo.InvariantCulture);
-//Console.WriteLine(date3);
+var date3 = DateTime.ParseExact(dateString, format, CultureInfo.InvariantCulture);
+Console.WriteLine(date3);
