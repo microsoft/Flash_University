@@ -20,13 +20,20 @@ public class LinkedList<T> : IIterableCollection<T>
 
     public class Element
     {
-        public T Value { get; init; }
+        public Element(T value)
+        {
+            Value = value;
+        }
+
+        public T Value { get; }
         public Element? Next { get; init; }
     }
 
     public IIterator<T> CreateIterator()
     {
-        throw new NotImplementedException();
+        // both are equivalent
+        return new LinkedListIterator<T>(this);
+        //return new LinkedListIterator<T>(Head);
     }
 }
 
@@ -35,18 +42,83 @@ public class LinkedList<T> : IIterableCollection<T>
  *
  * This is a "ConcreteIterator"
  */
-public class LinkedListIterator<T> : IIterator<T>
+public class LinkedListIterator<TValue> : IIterator<TValue>
 {
-    public T Current => throw new NotImplementedException();
+    public LinkedListIterator(LinkedList<TValue> list)
+    {
+        _current = list.Head;
+    }
+
+    public LinkedListIterator(LinkedList<TValue>.Element? head)
+    {
+        _current = head;
+    }
+
+    public TValue Current
+    {
+        get
+        {
+            if (_current == null)
+            {
+                throw new Exception("can't get current after iterator is done");
+            }
+
+            return _current.Value;
+        }
+    }
 
     public void MoveNext()
     {
-        throw new NotImplementedException();
+        if (_current == null)
+        {
+            throw new Exception("can't move to next after iterator is done");
+        }
+
+        _current = _current.Next;
     }
 
     public bool IsDone()
     {
-        throw new NotImplementedException();
+        return _current == null;
+    }
+
+    private LinkedList<TValue>.Element? _current;
+}
+
+public class Example
+{
+    /*
+     * Manually looping through a linked list is remarkably similar
+     * to using an iterator - the iterator just abstracts away the
+     * steps to iteration
+     */
+    public static void PrintLinkedList(LinkedList<int> list)
+    {
+        // print out all elements manually
+        
+        var element = list.Head;
+
+        while (element != null)
+        {
+            Console.WriteLine(element.Value);
+            element = element.Next;
+        }
+
+        // print out all elements using iterator
+        // (iterator implementation listed in comments above each line)
+
+        // _current = list.Head;
+        var iterator = list.CreateIterator();
+
+        // !(_current == null)
+        while (!iterator.IsDone())
+        {
+            // _current.Value
+            Console.WriteLine(iterator.Current);
+
+            // _current = _current.Value
+            iterator.MoveNext();
+        }
     }
 }
 
@@ -68,9 +140,8 @@ public static class LinkedListGenerator
 
         for (int i = 0; i < length; i++)
         {
-            current = new LinkedList<int>.Element()
+            current = new LinkedList<int>.Element(value: random.Next(0, 10))
             {
-                Value = random.Next(0, 10),
                 Next = current
             };
         }
