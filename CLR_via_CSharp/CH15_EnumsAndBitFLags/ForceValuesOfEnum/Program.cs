@@ -2,12 +2,10 @@
 Console.WriteLine((int)cardValues.ten);
 
 
-
-
-enum cardValues
+internal enum cardValues
 {
     ace = 11,
-    two =2,
+    two = 2,
     three = 3,
     four = 4,
     five = 5,
@@ -15,7 +13,6 @@ enum cardValues
     seven = 7,
     eight = 8,
     nine = 9,
-    ten =10,
+    ten = 10,
     jack = 10
-
 }

@@ -1,10 +1,8 @@
-﻿
-
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Hello, World!");
 
 Console.WriteLine(Alot.abject);
 
-enum Alot : byte
+internal enum Alot : byte
 {
     design,
     blue,
@@ -261,6 +259,7 @@ enum Alot : byte
     divide,
     strange,
     striped,
-    bubble,
-    rainstorm
+
+    bubble
+    // rainstorm
 }

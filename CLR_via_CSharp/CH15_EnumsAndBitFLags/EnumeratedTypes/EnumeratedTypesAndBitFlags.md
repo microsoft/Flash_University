@@ -96,7 +96,46 @@ Object &rarr; ValueType &rarr; Enum
 ## Jeffrey, you need to be more epxlicit
 * "The compiler treates enumerated types as primitve types meaning you can use most operators with it.
 
-## What if there 
+
+
+## Iterating over enum set
+* Options in the code base
+    - Get Values (Type enumType)
+	- GetEnumValues()
+    	- they both return an array
+* Jeffrey's Preference
+
+## Can you parse an enum?
+* See example
+
+
+## Bitflags/field understanding
+* [complicated ex in code base](https://onedrive.visualstudio.com/DefaultCollection/SharePoint%20Online/_git/SPO.Core?path=/sts/stsom/Cobalt/SPHostBlobStoreTypes.cs&version=GBmain&line=142&lineEnd=160&lineStartColumn=4&lineEndColumn=64&lineStyle=plain&_a=contents)
+* How bitflags work in general
+* Note the 'flags' attribute
+* Fundamentally, we represnet a value in binary, and then use operations to determine whether or not the complex attribute has a specified value
+```
+001 = 1
+010 = 2
+100 = 4
+```
+
+1 reprensents an object is a school supply, 2 represents the object is made of wood and 3 represents the object can write
+
+a pencil would be 
+
+```
+111 = 7
+```
+
+A backpack would be?
+A Pen?
+
+
+Best way to 'learn this' is look at a really hard example
+
+## Extensions
+* see example, from book
 ## glossary
 * enum : enumerated type, the purpose of this entire chapter
 * '\x' : Might remember this from strings as a 'hexadecimal'
