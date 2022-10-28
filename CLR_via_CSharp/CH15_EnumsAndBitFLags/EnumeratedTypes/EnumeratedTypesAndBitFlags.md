@@ -47,10 +47,10 @@ So how can we prove this has some sort of enumeration?
 3. By Ildasm
 
 
-## hexadecimal for those who haven't seen it
+## hexadecimal primer
 Our usual numbers are in base 10. One way to thing of it is that every single place holder in a single number can hold up to 10 values
 
-My Number theory is rusty/shit but maybe you could think of each potential value of 0-9 as a unique value in a set. 
+My Number theory is, at best, awful but maybe you could think of each potential value of 0-9 as a unique value in a set. 
 
 
 
@@ -85,9 +85,20 @@ Object &rarr; ValueType &rarr; Enum
 1. Make things easier to read
 2. they are types that can be "extended"
 
+## Enumeration Manipulation
+* Can you change the base type of an enum?
+* In our code base (filestore), we do use this, look up enum and uint
+* Can you set a value of an enum?
 
-## Can we prove that they are representations of numbers?
+## What if we have more values than the base type allows?
+* See example
+
+## Jeffrey, you need to be more epxlicit
+* "The compiler treates enumerated types as primitve types meaning you can use most operators with it.
+
+## What if there 
 ## glossary
 * enum : enumerated type, the purpose of this entire chapter
 * '\x' : Might remember this from strings as a 'hexadecimal'
+
 
