@@ -2,10 +2,8 @@
 
 ## Questions From last week
 * Still no answer on the auto properties in events
-* TODO.Srikar --> Check ch 14 sln
 
-## This is a relatively short/easy chapter for usages. 
-I was thinking of combining the two chapters but, well, after strings, I needed a break and I think there are some smaller points in CS/C# that we can hit here.
+## This is a relatively short/easy chapter for usages. Brutal in terms of nuance
 
 ## What is an enum or enumerated type?
 - If I've only leared one things at this job, it's that it all boils down to 0s and ones and sometimes your team's job is to store the groups of 0s and 1s...
