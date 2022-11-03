@@ -1,7 +1,7 @@
 ﻿namespace Iterator.Iterables;
 
 /*
- * TODO Exercise: make ChunkedList iterable
+ * Exercise: make ChunkedList iterable
  */
 
 /**

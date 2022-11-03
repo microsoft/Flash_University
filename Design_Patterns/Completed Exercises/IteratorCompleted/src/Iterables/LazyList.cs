@@ -1,7 +1,7 @@
 ﻿namespace Iterator.Iterables;
 
 /*
- * TODO Exercise: make LazyList iterable
+ * Exercise: make LazyList iterable
  */
 
 /**

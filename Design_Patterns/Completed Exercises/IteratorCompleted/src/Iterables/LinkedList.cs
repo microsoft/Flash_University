@@ -1,7 +1,7 @@
 ﻿namespace Iterator.Iterables;
 
 /*
- * TODO Exercise: implement the methods necessary to make the iterator work
+ * Exercise: implement the method necessary to make the iterator work
  */
 
 /**
@@ -31,7 +31,9 @@ public class LinkedList<T> : IIterableCollection<T>
 
     public IIterator<T> CreateIterator()
     {
-        throw new NotImplementedException();
+        // both are equivalent
+        return new LinkedListIterator<T>(this);
+        //return new LinkedListIterator<T>(Head);
     }
 }
 
@@ -42,17 +44,45 @@ public class LinkedList<T> : IIterableCollection<T>
  */
 public class LinkedListIterator<TValue> : IIterator<TValue>
 {
-    public TValue Current => throw new NotImplementedException();
+    public LinkedListIterator(LinkedList<TValue> list)
+    {
+        _current = list.Head;
+    }
+
+    public LinkedListIterator(LinkedList<TValue>.Element? head)
+    {
+        _current = head;
+    }
+
+    public TValue Current
+    {
+        get
+        {
+            if (_current == null)
+            {
+                throw new Exception("can't get current after iterator is done");
+            }
+
+            return _current.Value;
+        }
+    }
 
     public void MoveNext()
     {
-        throw new NotImplementedException();
+        if (_current == null)
+        {
+            throw new Exception("can't move to next after iterator is done");
+        }
+
+        _current = _current.Next;
     }
 
     public bool IsDone()
     {
-        throw new NotImplementedException();
+        return _current == null;
     }
+
+    private LinkedList<TValue>.Element? _current;
 }
 
 #region generator
@@ -85,39 +115,41 @@ public static class LinkedListGenerator
 
 #endregion
 
-#region LinkedList Example
+#region Manual Iteration vs Iterator
 
 public class Example
 {
     /*
-     * Quick example to show how to build a linked list
+     * Manually looping through a linked list is remarkably similar
+     * to using an iterator - the iterator just abstracts away the
+     * steps to iteration
      */
-    public static LinkedList<int> BuildLinkedList()
+    public static void PrintLinkedList(LinkedList<int> list)
     {
-        var head = new LinkedList<int>.Element(0)
-        {
-            Next = new LinkedList<int>.Element(1)
-            {
-                Next = new LinkedList<int>.Element(2)
-            }
-        };
+        // print out all elements manually
 
-        var list = new LinkedList<int>(head);
-
-        return list;
-    }
-
-    /*
-     * Quick example to show how to manually iterate through the linked list
-     */
-    public static void UseLinkedList(LinkedList<int> list)
-    {
         var element = list.Head;
 
         while (element != null)
         {
             Console.WriteLine(element.Value);
             element = element.Next;
+        }
+
+        // print out all elements using iterator
+        // (iterator implementation listed in comments above each line)
+
+        // _current = list.Head;
+        var iterator = list.CreateIterator();
+
+        // !(_current == null)
+        while (!iterator.IsDone())
+        {
+            // _current.Value
+            Console.WriteLine(iterator.Current);
+
+            // _current = _current.Next
+            iterator.MoveNext();
         }
     }
 }

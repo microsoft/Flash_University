@@ -1,7 +1,7 @@
 ﻿namespace Iterator.Iterables;
 
 /*
- * TODO Exercise: make FibonacciSequence iterable
+ * Exercise: make FibonacciSequence iterable
  */
 
 /**
