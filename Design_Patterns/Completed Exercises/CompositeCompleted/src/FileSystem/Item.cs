@@ -23,6 +23,7 @@ public abstract class Item
     #region Common Operations
 
     public string Name { get; }
+    public abstract string DisplayName { get; }
     public abstract int SizeOnDisk { get; } // # of characters
 
     public string AbsoluteName

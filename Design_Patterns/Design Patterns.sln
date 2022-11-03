@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Strategy\Strate
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iterator", "Iterator\Iterator.csproj", "{9B87CD34-42B3-4945-9CA0-4AE03F66C20D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{7738E083-CA75-4104-B00C-988B84BDA321}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Composite.csproj", "{7738E083-CA75-4104-B00C-988B84BDA321}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
