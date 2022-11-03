@@ -2,6 +2,10 @@
 
 namespace Composite;
 
+/*
+ * TODO Exercise: finish implementing all the commands
+ */
+
 /**
  * A simple CLI for managing files & folders
  */
