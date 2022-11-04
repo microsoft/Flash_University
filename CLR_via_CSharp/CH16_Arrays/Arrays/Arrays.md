@@ -62,7 +62,6 @@ var references = new UsefulClass[10];
 
 </details>
 
-//TODO.Srikar (draw out figure 16.1)
 
 Where can we see the differences? Of course, the IL?
 

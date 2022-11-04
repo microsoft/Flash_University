@@ -1,7 +1,7 @@
-﻿int[] fibonacci;
-fibonacci = new int[10];
+﻿object[] fibonacci;
+fibonacci = new object[10];
 
-// foreach (int i in fibonacci)
-// {
-//     Console.WriteLine(i);
-// }
+foreach (object i in fibonacci)
+{
+    Console.WriteLine(i.ToString());
+}

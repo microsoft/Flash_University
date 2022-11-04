@@ -7,10 +7,10 @@ var references = new UsefulClass[2];
 
 //What do we expect here. 
 
-// foreach (var i in references)
-// {
-//     Console.WriteLine(i.X);
-// }
+foreach (var i in references)
+{
+    Console.WriteLine(i.X);
+}
 
 
 for (var i = 0; i < references.Length; i++) references[i] = new UsefulClass();
