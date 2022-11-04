@@ -11,7 +11,6 @@ string[] names = { "one", "two" };
 var similiar = new[] { "one", "two" };
 
 
-
 // var guess1 = new[] { "one", "two",null };
 // var guess2 = new[] { null, "two", "three" };
 // var guess3 = new[] { "one", "two", 3 };

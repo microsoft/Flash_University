@@ -1,7 +1,7 @@
 ﻿// again from the book
 
-String[] initialArray = new string[100];
-Object[] objectArray = initialArray;
+var initialArray = new string[100];
+object[] objectArray = initialArray;
 objectArray[5] = "SomeString";
 
 //Another great example of IL

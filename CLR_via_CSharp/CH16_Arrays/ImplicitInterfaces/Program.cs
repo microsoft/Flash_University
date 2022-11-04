@@ -1,4 +1,4 @@
-﻿FileStream[] fs = new FileStream[]{new FileStream("string", FileMode.Append)};
+﻿FileStream[] fs = { new("string", FileMode.Append) };
 
 ListMethod(fs);
 CollectionMethod(fs);
