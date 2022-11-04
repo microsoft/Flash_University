@@ -128,8 +128,33 @@ You can get the same effect with Array.Copy
 ## All Arrays are System.Array
 
 - you get a lot out of the box. Just look at [System.Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-7.0)
-- you get IEnumerable, ICollection and IList implicitly
+- you get IEnumerable, ICollection and IList implicitly (quick reminder, IEnumerable lets you iterate over a collection, Ilist is the collection representation of a list/array )
 - there is some magic going on here as these interfaces are only defeinted for vectors
+
+## Who gets what Interfaces?
+
+```C#
+Object
+    Array 
+        Object[]
+            String[]
+            Stream[]
+                Filestream[]
+```
+
+<details>
+  <summary>Which versions of Ienumerable, ICollection, and Ilist go where</summary>
+
+    ```
+    Object 
+      Array                     (non-generic IEnumerable, ICollection, IList)
+        Object[]                (Object's IEnumerable, ICollection, IList)
+            String[]            (String's IEnumerable, ICollection, IList)
+            Stream[]            (Streams's IEnumerable, ICollection, IList)
+                Filestream[]    (FileStream's IEnumerable, ICollection, IList)
+    ```
+
+</details>
 ## Glossary:
 
 array covariance - the functionality of being able to convert from one type of array to another
