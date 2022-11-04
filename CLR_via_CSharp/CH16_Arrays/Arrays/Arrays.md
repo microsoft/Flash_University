@@ -112,7 +112,27 @@ and
 String[] values = new String[]{"one", "two"}
 ```
 
+## Casting
+
+The fundamental points here are that 
+- the CLR allows you to cast an array from one type to another if a conaverstion exists
+- the array must be a reference type
+
+(begs the question, why not value types?)
+
+You can get the same effect with Array.Copy
+
+### Array.Copy()
+- See examples, really the best. Basically, we can cast from one array type to another, even value types
+
+## All Arrays are System.Array
+
+- you get a lot out of the box. Just look at [System.Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-7.0)
+- you get IEnumerable, ICollection and IList implicitly
+- there is some magic going on here as these interfaces are only defeinted for vectors
 ## Glossary:
+
+array covariance - the functionality of being able to convert from one type of array to another
 
 array initializer - the {} after an array with the initial values
 
