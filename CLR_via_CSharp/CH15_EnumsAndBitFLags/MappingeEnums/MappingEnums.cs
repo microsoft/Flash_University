@@ -4,7 +4,6 @@ Console.WriteLine(c.ToString());
 
 //this is some formatting fun -- things to keep from last time, general, decimal,hex
 
-Console.WriteLine(c.ToString("G"));
 Console.WriteLine(c.ToString("D"));
 Console.WriteLine(c.ToString("X"));
 //The operators on the enum applies to the _instance field

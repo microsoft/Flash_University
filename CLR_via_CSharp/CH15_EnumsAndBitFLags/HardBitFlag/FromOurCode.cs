@@ -12,7 +12,7 @@ public enum splitSchema : byte
     //0     00000000
 
     c3one = 1,
-    //1     00000010
+    //1     00000001
 
 
     c3two = 2, //2     00000010
@@ -26,8 +26,8 @@ public enum splitSchema : byte
     // Schema values
     //factors of 8
     c2zero = 0x00, //0     00000000
-    c2one = 0x10, //16    00001000
-    c2two = 0x20, // 32   00010000
+    c2one = 0x10, //16     00001000
+    c2two = 0x20, // 32    00010000
     c2three = 0x8, //8     00001000
     c2four = 0x18, //24    00011000
 

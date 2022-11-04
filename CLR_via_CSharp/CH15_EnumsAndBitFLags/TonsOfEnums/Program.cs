@@ -260,6 +260,6 @@ internal enum Alot : byte
     strange,
     striped,
 
-    bubble
-    // rainstorm
+    bubble,
+    //rainstorm
 }

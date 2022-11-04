@@ -1,6 +1,11 @@
 ﻿Console.WriteLine(cardValues.ace);
 Console.WriteLine((int)cardValues.ten);
+Console.WriteLine((int)cardValues.jack);
 
+int k = 10;
+Console.WriteLine((cardValues) k);
+Console.WriteLine((cardValues)k);
+Console.WriteLine((cardValues)k);
 
 internal enum cardValues
 {
@@ -14,5 +19,7 @@ internal enum cardValues
     eight = 8,
     nine = 9,
     ten = 10,
-    jack = 10
+    jack = 10,
+    queen = 10,
+    king = 10
 }

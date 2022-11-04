@@ -59,19 +59,34 @@ var references = new UsefulClass[10];
 Where can we see the differences? Of course, the IL?
 
 ```il
-    IL_0000: ldc.i4.s     
-    IL_0002: newarr
-    IL_0007: stloc.0      
+IL_0000: ldc.i4.s     
+IL_0002: newarr
+IL_0007: stloc.0      
 ```
 
 ```il
-    IL_0028: ldc.i4.2
-    IL_0029: newarr       
-    IL_002e: stloc.1      
+IL_0028: ldc.i4.2
+IL_0029: newarr       
+IL_002e: stloc.1      
 ```
 
 Is there really a difference? Not really... This kind of reinforces the point that arrays of reference types are not actually instantiated. 
 
 These are Single dimensional, Zero-based arrays. AKA  As per god, please do this whenever possible]
 
+We'll see certain IL instructions that reference them but for now, just remember the first one
+```
+newwarr, ldelem, ldelema, ldlen, stelem
+```
+
+
+<details>
+  <summary>Is there any regulation on the size of the array if it's placed in an array?</summary>
+
+    No. Which is why they're called jagged
+</details>
+
 ## Glossary:
+SZ arrays - Single Dimensional, zero degree arrays AKA vectors
+
+Jagged Arrays - Arrays of arrays
