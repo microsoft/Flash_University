@@ -1,10 +1,7 @@
 ﻿int[] fibonacci;
 fibonacci = new int[10];
 
-foreach (int i in fibonacci)
-{
-    Console.WriteLine(i);
-}
+foreach (var i in fibonacci) Console.WriteLine(i);
 
 var references = new UsefulClass[2];
 
@@ -16,24 +13,17 @@ var references = new UsefulClass[2];
 // }
 
 
-for (int i = 0; i < references.Length; i++)
-{
-    references[i] = new UsefulClass();
-}
+for (var i = 0; i < references.Length; i++) references[i] = new UsefulClass();
 
-foreach (var i in references)
-{
-    Console.WriteLine(i.X);
-}
+foreach (var i in references) Console.WriteLine(i.X);
 
 
 internal class UsefulClass
 {
-    public int X { get; set; } 
-
     public UsefulClass()
     {
         X = 0;
     }
-}
 
+    public int X { get; set; }
+}
