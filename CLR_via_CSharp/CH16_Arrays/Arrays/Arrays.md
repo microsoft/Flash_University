@@ -155,6 +155,26 @@ Object
     ```
 
 </details>
+
+## Non-Zero Lower Bound
+- Disclaimer, don't do this unless you have a really, really good reason
+- fundamentally, you're creating a twôdimensional array with two other arrays
+
+## Array Internals
+
+- CLR supports SZ arrays
+- single or multi dimensional arrays with any lower bound
+- System.Type[*] is the CLR's way of of showing that the array is not zero based
+- Note the difference between [] and [,]
+- Can we find the "performance overhead"
+
+### Understanding some optimizations
+- in the IL for Array Internals, lets look at the for loop
+- Note the ldlen in the IL. The CLR uses the JIT compiler to call the length
+  - It's really fast
+- JIT compiler knows the range of the for loop. 
+
+## Unsafe Access. H
 ## Glossary:
 
 array covariance - the functionality of being able to convert from one type of array to another
