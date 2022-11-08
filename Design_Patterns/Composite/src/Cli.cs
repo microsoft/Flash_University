@@ -25,7 +25,7 @@ public class Cli
 
     public void Run()
     {
-        Console.WriteLine("Collection Printing System");
+        Console.WriteLine("Mini File System");
 
         var command = GetNextCommand();
 
