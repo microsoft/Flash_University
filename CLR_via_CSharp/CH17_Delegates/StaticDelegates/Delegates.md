@@ -49,6 +49,12 @@ void button1_Click(object sender¿EventArgs e){
 
 - What if you want to not not even write out a method?
 - Just use a lambda function
+
+## If you only take away one thing from today
+- All of these are rarely used today. Instead, we used Actions and functions
+- basically, every 'delegate' was a function with n generic types
+- So what if we just use a generic action/function
+
 ## Glossary
 
 ## _target  
