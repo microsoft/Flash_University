@@ -1,5 +1,5 @@
 ﻿//var printActionDel = ConsolePrint;
-//printActionDel(10);
+//printActionDel(42);
 
 //static void ConsolePrint(int i)
 //{

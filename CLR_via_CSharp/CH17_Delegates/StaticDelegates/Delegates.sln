@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateChaining", "..\Dele
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateEvolution", "..\DelegateEvolution\DelegateEvolution.csproj", "{9A19CC07-03EF-4136-8039-47499462FEB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Action", "..\Action\Action.csproj", "{024A3187-E108-4B82-8100-5BD33575580F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Action", "..\Action\Action.csproj", "{024A3187-E108-4B82-8100-5BD33575580F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Func", "..\Func\Func.csproj", "{A850D5C4-9FAC-4155-828D-12EAA92BC98C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{024A3187-E108-4B82-8100-5BD33575580F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{024A3187-E108-4B82-8100-5BD33575580F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{024A3187-E108-4B82-8100-5BD33575580F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A850D5C4-9FAC-4155-828D-12EAA92BC98C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A850D5C4-9FAC-4155-828D-12EAA92BC98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A850D5C4-9FAC-4155-828D-12EAA92BC98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A850D5C4-9FAC-4155-828D-12EAA92BC98C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
