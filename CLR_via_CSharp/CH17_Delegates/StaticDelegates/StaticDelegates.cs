@@ -1,5 +1,5 @@
 ﻿// Simplified version of the example in the book.
-internal sealed class DelegateIntro {
+internal sealed class StaticDelegates {
    // Old school delegate
    internal delegate void Feedback(Int32 value);
    
@@ -10,7 +10,7 @@ internal sealed class DelegateIntro {
    private static void StaticDelegateDemo() {
       Console.WriteLine("----- Static Delegate Demo -----");
       Counter(1, 3, null);
-      Counter(1, 3, new Feedback(DelegateIntro.FeedbackToConsole));
+      Counter(1, 3, new Feedback(StaticDelegates.FeedbackToConsole));
       Console.WriteLine();
    }
    

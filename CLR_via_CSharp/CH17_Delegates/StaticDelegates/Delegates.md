@@ -21,6 +21,12 @@ Console.WriteLine(a.GetType());
 ## The best way to understand this is simply to walk through an example.
 - starting off with a 'static method'. Simple because it's outside of a class
 - Code flow logically goes 1 step at a time but when the delegate is called, we basically call the delegate's function before continuing
+
+## How does this work at the IL Level?
+- A delegate creates 4 methods: ctor, invoke, beginInvoke, and EndInvoke
+- These are outdated but it's worth looking at just to get a picture of what things look like
+- System.Object --> System.Delegate-->System.MulticastDelegate
+- 
 ## Glossary
 
 ### Callback
