@@ -25,9 +25,20 @@ Console.WriteLine(a.GetType());
 ## How does this work at the IL Level?
 - A delegate creates 4 methods: ctor, invoke, beginInvoke, and EndInvoke
 - These are outdated but it's worth looking at just to get a picture of what things look like
-- System.Object --> System.Delegate-->System.MulticastDelegate
-- 
+- System.Object --> System.Delegate-->System.MulticastDelegates
+- Todo.Srikar --> draw out the diagram/difference of the image differences
+
+
+## 
 ## Glossary
+
+## _target  
+value that's passed in
+## _methodPtr
+internal integer the CLR uses to identify a method to be called back
+## _invocationChaining 
+array of delegates when building a delegate chain
+
 
 ### Callback
 
