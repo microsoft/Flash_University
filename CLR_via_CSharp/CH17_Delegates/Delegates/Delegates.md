@@ -19,3 +19,16 @@ Console.WriteLine(a.GetType());
 
 
 ## The best way to understand this is simply to walk through an example.
+- starting off with a 'static method'. Simple because it's outside of a class
+- Code flow logically goes 1 step at a time but when the delegate is called, we basically call the delegate's function before continuing
+## Glossary
+
+### Callback
+
+### Instance Method
+
+### Static Method
+
+### Delegate
+
+### Pointer
