@@ -29,7 +29,26 @@ Console.WriteLine(a.GetType());
 - Todo.Srikar --> draw out the diagram/difference of the image differences
 
 
-## 
+## How did people make things simpler?
+- If you noticed, in C, all you really ever needed to get a delegate or call back function to work was just the pointer/reference
+- So delegates basically went through an evolution
+
+```
+button1.click += new EventHandler(button1_Click);
+void button1_Click(object sender¿EventArgs e){
+	//do something
+}
+```
+- people would rather just write
+```
+button1.click += button1_Click;
+void button1_Click(object sender¿EventArgs e){
+	//do something
+}
+```
+
+- What if you want to not not even write out a method?
+- Just use a lambda function
 ## Glossary
 
 ## _target  
