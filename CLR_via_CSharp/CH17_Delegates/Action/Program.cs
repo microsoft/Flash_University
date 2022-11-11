@@ -1,9 +1,9 @@
-﻿
+﻿//var printActionDel = ConsolePrint;
+//printActionDel(10);
 
-    Action<int> printActionDel = ConsolePrint;
-    printActionDel(10);
+//static void ConsolePrint(int i)
+//{
+//    Console.WriteLine(i);
+//}
 
-    static void ConsolePrint(int i)
-    {
-        Console.WriteLine(i);
-    }
+Action<int> printActionDel = i => Console.WriteLine(i);
