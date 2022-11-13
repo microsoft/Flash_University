@@ -1,0 +1,3 @@
+﻿using Events;
+
+MailManager.Go();
