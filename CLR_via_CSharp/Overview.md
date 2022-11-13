@@ -51,3 +51,6 @@ marp: true
         I Want to get back to these, I think i'm ready to get this one this time around
 - Chapter 8 
     - missed type constructors on 187
+- Chapter 17
+    - Delegate Chaining
+        - wanted a simpler chapter after a while (want to make a pass through again)
