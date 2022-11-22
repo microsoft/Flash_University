@@ -1,4 +1,5 @@
 ﻿using Factory_Method.Analyzer;
+using Utils;
 
 namespace Factory_Method;
 
@@ -9,26 +10,24 @@ namespace Factory_Method;
 /**
  * A CLI for calculating simple statistics on generated number lists
  */
-public class Cli
+public class Cli : CliBase
 {
     public Cli()
     {
         _analyzer = new DatasetAnalyzer();
 
-        _commands = new()
+        Commands.MergeIn(new Dictionary<string, Action>()
         {
             { "switch-dataset", SwitchDataset },
             { "run-analysis", RunAnalysis }
-        };
+        });
     }
 
-    public static string Title = "Dataset Analyzer";
+    public override string Title => "Dataset Analyzer";
 
     private DatasetAnalyzer _analyzer;
 
     #region commands
-
-    private readonly Dictionary<string, Action> _commands;
 
     /**
      * Switches which type of dataset is being used
@@ -53,14 +52,12 @@ public class Cli
         while (num == null)
         {
             Console.Write("> ");
-            var input = Console.ReadLine();
 
-
-            if (int.TryParse(input, out var value))
+            try
             {
-                num = value;
+                num = CliUtils.ReadInt();
             }
-            else
+            catch
             {
                 Console.WriteLine("not a valid number");
             }
@@ -82,51 +79,6 @@ public class Cli
         Console.WriteLine($"average: {summary.Average}");
         Console.WriteLine($"median: {summary.Median}");
         Console.WriteLine($"sum: {summary.Sum}");
-    }
-
-    #endregion
-
-    #region command runner
-
-    public void Run()
-    {
-        Console.WriteLine(Title);
-
-        var command = GetNextCommand();
-
-        while (command != null && command != "quit" && command != "exit")
-        {
-            RunCommand(command);
-            command = GetNextCommand();
-        }
-    }
-
-    private string? GetNextCommand()
-    {
-        Console.Write("\n> ");
-        return Console.ReadLine();
-    }
-
-    private void RunCommand(string command)
-    {
-        try
-        {
-            if (_commands.TryGetValue(command, out var commandAction))
-            {
-                commandAction();
-            }
-            else
-            {
-                String.Join("', '", _commands.Keys);
-
-                Console.WriteLine("unknown command: {0}", command);
-                Console.WriteLine($"valid commands are: '{String.Join("', '", _commands.Keys)}'");
-            }
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine("Error: {0}", e.Message);
-        }
     }
 
     #endregion
