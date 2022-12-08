@@ -2,6 +2,7 @@
 
 /**
  * The dataset interface
+ * This is the "Product" interface
  */
 public interface IDataset
 {
@@ -10,6 +11,7 @@ public interface IDataset
 
 /**
  * A dataset with static data
+ * This is a "ConcreteProduct"
  */
 public class StaticDataset : IDataset
 {
@@ -28,6 +30,7 @@ public class StaticDataset : IDataset
 
 /**
  * A dataset with randomly generated data
+ * This is a "ConcreteProduct"
  */
 public class RandomDataset : IDataset
 {
@@ -48,6 +51,7 @@ public class RandomDataset : IDataset
 
 /**
  * A dataset created from user input
+ * This is a "ConcreteProduct"
  */
 public class UserProvidedDataset : IDataset
 {

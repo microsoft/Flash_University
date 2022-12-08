@@ -1,13 +1,5 @@
 ﻿namespace Factory_Method.Dataset;
 
-/*
- * TODO Exercise: Apply the Factory Method pattern to DatasetSummarizer
- *
- * The goal is to flexibly allow using different IDataset classes,
- * and to allow someone else (ie the Cli) to be responsible for
- * picking the IDataset class.
- */
-
 /**
  * Some calculated statistics of a dataset
  */
@@ -23,33 +15,75 @@ public struct DatasetSummary
 }
 
 /**
- * The Dataset Summarizer
+ * Summarizes a dataset
+ * This is the abstract "Creator"
  */
-public class DatasetSummarizer
+public abstract class DatasetSummarizerBase
 {
-    // TODO Exercise: add a "Factory Method"
-
     public DatasetSummary GetDatasetSummary()
     {
-        // TODO Exercise: decouple this from StaticDataset
-        // instead it should only use IDataset
-        StaticDataset dataset = new StaticDataset(_random.Next(3, 15));
+        var dataset = CreateDataset(_random.Next(3, 15));
 
         var sortedData = new List<int>(dataset.Data);
         sortedData.Sort();
 
         var sum = sortedData.Aggregate((currentSum, num) => currentSum + num);
 
-        return new DatasetSummary()
+        return new DatasetSummary
         {
             SortedData = sortedData,
             Min = sortedData.First(),
             Max = sortedData.Last(),
-            Average = ((double)sum) / sortedData.Count,
+            Average = (double)sum / sortedData.Count,
             Median = sortedData[sortedData.Count / 2 - 1],
-            Sum = sum,
+            Sum = sum
         };
     }
 
-    private readonly Random _random = new Random();
+    public abstract IDataset CreateDataset(int size);
+    
+    private readonly Random _random = new();
+}
+
+/**
+ * The Dataset Summarizer for StaticDataset
+ * This is a "ConcreteCreator"
+ */
+public class StaticDatasetSummarizer : DatasetSummarizerBase
+{
+    public override IDataset CreateDataset(int size)
+    {
+        return new StaticDataset(size);
+    }
+}
+
+/**
+ * The Dataset Summarizer for RandomDataset
+ * This is a "ConcreteCreator"
+ */
+public class RandomDatasetSummarizer : DatasetSummarizerBase
+{
+    public override IDataset CreateDataset(int size)
+    {
+        return new RandomDataset(0, 10, size);
+    }
+}
+
+/**
+ * The Dataset Summarizer for UserProvidedDataset
+ * This is a "ConcreteCreator"
+ */
+public class UserProvidedDatasetSummarizer : DatasetSummarizerBase
+{
+    public UserProvidedDatasetSummarizer(Func<int> getNumber)
+    {
+        _getNumber = getNumber;
+    }
+
+    public override IDataset CreateDataset(int size)
+    {
+        return new UserProvidedDataset(_getNumber, size);
+    }
+
+    private readonly Func<int> _getNumber;
 }

@@ -3,10 +3,6 @@ using Utils;
 
 namespace Factory_Method;
 
-/*
- * TODO Exercise: implement the SwitchDataset command
- */
-
 /**
  * A CLI for calculating simple statistics on generated number lists
  */
@@ -14,9 +10,9 @@ public class Cli : CliBase
 {
     public Cli()
     {
-        _summarizer = new DatasetSummarizer();
+        _summarizer = new StaticDatasetSummarizer();
 
-        Commands.MergeIn(new Dictionary<string, Action>()
+        Commands.MergeIn(new Dictionary<string, Action>
         {
             { "switch-dataset", SwitchDataset },
             { "get-summary", GetSummary }
@@ -25,7 +21,7 @@ public class Cli : CliBase
 
     public override string Title => "Dataset Summarizer";
 
-    private DatasetSummarizer _summarizer;
+    private DatasetSummarizerBase _summarizer;
 
     #region commands
 
@@ -38,7 +34,22 @@ public class Cli : CliBase
         Console.WriteLine("dataset type:");
         var datasetType = Console.ReadLine();
 
-        // TODO Exercise: implement this
+        if (datasetType == "static")
+        {
+            _summarizer = new StaticDatasetSummarizer();
+        }
+        else if (datasetType == "random")
+        {
+            _summarizer = new RandomDatasetSummarizer();
+        }
+        else if (datasetType == "user")
+        {
+            _summarizer = new UserProvidedDatasetSummarizer(GetNumber);
+        }
+        else
+        {
+            throw new Exception($"{datasetType} is not a valid dataset type");
+        }
     }
 
     /**
@@ -51,7 +62,7 @@ public class Cli : CliBase
         int? num = null;
         while (num == null)
         {
-            Console.Write("> ");
+            Console.Write("? ");
 
             try
             {
@@ -73,7 +84,7 @@ public class Cli : CliBase
     {
         var summary = _summarizer.GetDatasetSummary();
 
-        Console.WriteLine($"data (sorted): {String.Join(", ", summary.SortedData)}");
+        Console.WriteLine($"data (sorted): {string.Join(", ", summary.SortedData)}");
         Console.WriteLine($"min: {summary.Min}");
         Console.WriteLine($"max: {summary.Max}");
         Console.WriteLine($"average: {summary.Average}");

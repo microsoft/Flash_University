@@ -4,7 +4,7 @@ public abstract class CliBase
 {
     public CliBase()
     {
-        Commands = new()
+        Commands = new Dictionary<string, Action>
         {
             { "help", Help }
         };
@@ -51,7 +51,7 @@ public abstract class CliBase
             }
             else
             {
-                String.Join("', '", Commands.Keys);
+                string.Join("', '", Commands.Keys);
 
                 Console.WriteLine("unknown command: {0}", command);
                 Help();
@@ -65,7 +65,7 @@ public abstract class CliBase
 
     private void Help()
     {
-        Console.WriteLine($"valid commands are: '{String.Join("', '", Commands.Keys)}', 'quit', 'exit'");
+        Console.WriteLine($"valid commands are: '{string.Join("', '", Commands.Keys)}', 'quit', 'exit'");
     }
 
     #endregion

@@ -29,13 +29,12 @@
  *      Defines the shared interface for all of the various dataset classes
  *  - StaticDataset, etc (Dataset/Dataset.cs)
  *      The `ConcreteProduct` class
- *  - DatasetSummarizer (Dataset/DatasetSummarizer.cs)
+ *  - DatasetSummarizerBase (Dataset/DatasetSummarizer.cs)
  *      The `Creator` class
  *      Creates an IDataset and uses it
  *  - StaticDatasetSummarizer, etc (Dataset/DatasetSummarizer.cs)
  *      The `ConcreteCreator` class
  *      Implements the GetDataset factory method
- *      (implementing this is part of the exercise)
  */
 
 using Factory_Method;

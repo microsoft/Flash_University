@@ -1,9 +1,5 @@
 ﻿namespace Composite.FileSystem;
 
-/*
- * TODO Exercise: what "common operations" should this include?
- */
-
 /**
  * The "Component" base class
  *
