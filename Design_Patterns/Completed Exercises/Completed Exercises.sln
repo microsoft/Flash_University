@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorCompleted", "Iterat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyCompleted", "ProxyCompleted\ProxyCompleted.csproj", "{340BD2B5-BC9A-4653-8546-3089564E5A02}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethodCompleted", "FactoryMethodCompleted\FactoryMethodCompleted.csproj", "{3E76F1BF-EBFA-4BFD-B7D3-ADDC427C0527}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "..\Utils\Utils.csproj", "{323F7E12-0415-4584-8407-C7CEE09194C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{340BD2B5-BC9A-4653-8546-3089564E5A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{340BD2B5-BC9A-4653-8546-3089564E5A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{340BD2B5-BC9A-4653-8546-3089564E5A02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E76F1BF-EBFA-4BFD-B7D3-ADDC427C0527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E76F1BF-EBFA-4BFD-B7D3-ADDC427C0527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E76F1BF-EBFA-4BFD-B7D3-ADDC427C0527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E76F1BF-EBFA-4BFD-B7D3-ADDC427C0527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{323F7E12-0415-4584-8407-C7CEE09194C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{323F7E12-0415-4584-8407-C7CEE09194C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{323F7E12-0415-4584-8407-C7CEE09194C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{323F7E12-0415-4584-8407-C7CEE09194C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
