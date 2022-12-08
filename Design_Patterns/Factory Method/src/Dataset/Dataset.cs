@@ -1,4 +1,4 @@
-﻿namespace Factory_Method.Analyzer;
+﻿namespace Factory_Method.Dataset;
 
 /**
  * The dataset interface

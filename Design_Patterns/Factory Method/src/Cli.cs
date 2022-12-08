@@ -1,4 +1,4 @@
-﻿using Factory_Method.Analyzer;
+﻿using Factory_Method.Dataset;
 using Utils;
 
 namespace Factory_Method;
@@ -14,18 +14,18 @@ public class Cli : CliBase
 {
     public Cli()
     {
-        _analyzer = new DatasetAnalyzer();
+        _summarizer = new DatasetSummarizer();
 
         Commands.MergeIn(new Dictionary<string, Action>()
         {
             { "switch-dataset", SwitchDataset },
-            { "run-analysis", RunAnalysis }
+            { "get-summary", GetSummary }
         });
     }
 
-    public override string Title => "Dataset Analyzer";
+    public override string Title => "Dataset Summarizer";
 
-    private DatasetAnalyzer _analyzer;
+    private DatasetSummarizer _summarizer;
 
     #region commands
 
@@ -67,11 +67,11 @@ public class Cli : CliBase
     }
 
     /**
-     * Generate the dataset, analyze it, and print out the results
+     * Generate the dataset, generate the summary it, and print out the results
      */
-    public void RunAnalysis()
+    public void GetSummary()
     {
-        var summary = _analyzer.RunAnalysis();
+        var summary = _summarizer.GetDatasetSummary();
 
         Console.WriteLine($"data (sorted): {String.Join(", ", summary.SortedData)}");
         Console.WriteLine($"min: {summary.Min}");

@@ -1,9 +1,7 @@
-﻿using System.Drawing;
-
-namespace Factory_Method.Analyzer;
+﻿namespace Factory_Method.Dataset;
 
 /*
- * TODO Exercise: Apply the Factory Method pattern to DatasetAnalyzer
+ * TODO Exercise: Apply the Factory Method pattern to DatasetSummarizer
  *
  * The goal is to flexibly allow using different IDataset classes,
  * and to allow someone else (ie the Cli) to be responsible for
@@ -11,7 +9,7 @@ namespace Factory_Method.Analyzer;
  */
 
 /**
- * The calculated statistics of a dataset
+ * Some calculated statistics of a dataset
  */
 public struct DatasetSummary
 {
@@ -25,13 +23,13 @@ public struct DatasetSummary
 }
 
 /**
- * The Dataset Analyzer
+ * The Dataset Summarizer
  */
-public class DatasetAnalyzer
+public class DatasetSummarizer
 {
     // TODO Exercise: add a "Factory Method"
 
-    public DatasetSummary RunAnalysis()
+    public DatasetSummary GetDatasetSummary()
     {
         // TODO Exercise: decouple this from StaticDataset
         // instead it should only use IDataset
