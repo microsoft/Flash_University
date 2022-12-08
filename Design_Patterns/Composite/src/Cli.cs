@@ -97,7 +97,7 @@ public class Cli
     public void Details()
     {
         // TODO Exercise: should this include any other info?
-        Console.WriteLine(_current.FullName);
+        Console.WriteLine(_current.AbsoluteName);
         Console.WriteLine($"size on disk: {_current.SizeOnDisk} characters");
         Console.WriteLine();
     }
