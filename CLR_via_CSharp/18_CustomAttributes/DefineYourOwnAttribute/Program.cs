@@ -1,6 +1,8 @@
 ﻿var queen = new Queen();
 var king = new King();
 
+//Detecting a king
+
 if (king.GetType().IsDefined(typeof(GeneralAttribute), true))
 {
     // Why does this not work?
