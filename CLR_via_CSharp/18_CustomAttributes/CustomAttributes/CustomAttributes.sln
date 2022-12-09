@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAttributes", "CustomA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstAttribute", "..\FirstAttribute\FirstAttribute.csproj", "{B5E22795-4106-4600-9464-ABBCB7B06A05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefineYourOwnAttribute", "..\DefineYourOwnAttribute\DefineYourOwnAttribute.csproj", "{72022EFA-8787-4B05-9C08-88BF57820904}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B5E22795-4106-4600-9464-ABBCB7B06A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5E22795-4106-4600-9464-ABBCB7B06A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5E22795-4106-4600-9464-ABBCB7B06A05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72022EFA-8787-4B05-9C08-88BF57820904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72022EFA-8787-4B05-9C08-88BF57820904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72022EFA-8787-4B05-9C08-88BF57820904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72022EFA-8787-4B05-9C08-88BF57820904}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

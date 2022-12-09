@@ -26,8 +26,10 @@ If you could create something that assigns properties like 'static', 'private' a
 
 Jeffrey's second definition is  that an attribute is "an instance of a class."
 
-## Limitations around attributes
+## Let's build our own -- of course, Chess Pieces
 
 Are 
 
  Does that make
+
+## 

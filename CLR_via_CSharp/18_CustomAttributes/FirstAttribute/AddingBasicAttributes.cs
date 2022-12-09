@@ -1,11 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
 Console.WriteLine("Hello, World!");
-Piece piece = new Piece();
+var piece = new Piece();
 piece.Name();
 
 //
 [Serializable]
-class Piece
+internal class Piece
 {
     internal void Name()
     {
