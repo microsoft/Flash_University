@@ -2,7 +2,7 @@
 int? b = null;
 
 //nullable to regular, explicit
-var c = (int) a;
+var c = (int)a;
 
 Console.WriteLine(c);
 

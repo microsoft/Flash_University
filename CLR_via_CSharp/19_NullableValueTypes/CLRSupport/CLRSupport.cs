@@ -13,30 +13,30 @@
 
 
 // Create a boxed Int32
-Object o = 5;
+
+object o = 5;
 
 // Unbox it into a Nullable<Int32> and into an Int32
-Int32? a = (Int32?)o; // a = 5
-Int32 b = (Int32)o;  // b = 5
+var a = (int?)o; // a = 5
+var b = (int)o; // b = 5
 
 // Create a reference initialized to null
 o = null;
 
 // “Unbox” it into a Nullable<Int32> and into an Int32
-a = (Int32?)o;       // a = null
-b = (Int32)o;       // NullReferenceException
+a = (int?)o; // a = null
+b = (int)o; // NullReferenceException
 
 
-Int32? x = 5;
+int? x = 5;
 
 // The line below displays "System.Int32"; 
 // not "System.Nullable<Int32>"
 Console.WriteLine(x.GetType());
 
 
-
-Int32? n = 5;
-Int32 result = ((IComparable<Int32>)n).CompareTo(5); // Compiles & runs OK
-Console.WriteLine(result);                           // 0
-result = ((IComparable)(Int32)n).CompareTo(5);       // Cumbersome
-Console.WriteLine(result);                           // 0
+int? n = 5;
+var result = ((IComparable<int>)n).CompareTo(5); // Compiles & runs OK
+Console.WriteLine(result); // 0
+result = ((IComparable)(int)n).CompareTo(5); // Cumbersome
+Console.WriteLine(result); // 0
