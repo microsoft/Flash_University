@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableValueTypes", "NullableValueTypes.csproj", "{F0917AB4-5B5A-4A70-BF1F-951D2C4CB460}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullableValueTypes", "NullableValueTypes.csproj", "{F0917AB4-5B5A-4A70-BF1F-951D2C4CB460}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullCoalescing", "..\NullCoalescing\NullCoalescing.csproj", "{7E731390-C7F3-4FB5-9263-CB122DA13A34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullCoalescing", "..\NullCoalescing\NullCoalescing.csproj", "{7E731390-C7F3-4FB5-9263-CB122DA13A34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversions", "..\Conversions\Conversions.csproj", "{C24E8E0A-BEE0-49D8-AC06-73D68E2AE577}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conversions", "..\Conversions\Conversions.csproj", "{C24E8E0A-BEE0-49D8-AC06-73D68E2AE577}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLRSupport", "..\CLRSupport\CLRSupport.csproj", "{BEEBE875-5105-4D5D-BC2D-D582E1F211E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLRSupport", "..\CLRSupport\CLRSupport.csproj", "{BEEBE875-5105-4D5D-BC2D-D582E1F211E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CBF17428-B8F2-44D0-A481-E2694834DB41}"
+	ProjectSection(SolutionItems) = preProject
+		..\NullableValueTypes.md = ..\NullableValueTypes.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
