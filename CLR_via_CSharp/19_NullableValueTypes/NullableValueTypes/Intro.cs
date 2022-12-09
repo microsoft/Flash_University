@@ -4,6 +4,7 @@ Console.WriteLine("Hello, World!");
 
 
 //int a= null;
+int? a = null;
 
 int? c = null;
 NotAValueType? b = null;

@@ -24,9 +24,4 @@
 - Boxing and unboxing
 - Get Type on a nullable type
 - Interface Methods
-<details>
-  <summary>Can you think of some examples?</summary>
-  - Bit Flags
-  - Serializable
-</details>
 

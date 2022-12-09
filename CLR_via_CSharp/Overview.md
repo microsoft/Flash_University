@@ -37,23 +37,24 @@ marp: true
 I'm writing this after finishing up chapter 19. For the most part, I'm happy with how things have come along. But due to reality constraints and a generalized need for not reading Jeffrey Richter for a bit, I think the plan is to do something like this
 
 ### Core Facilities
-20. Exceptions and State management (probably worth reading)
-21. Garbage Collection (definitely doing)
-22. CLR hosting and App Domains (quick read)
-23. Assembly Loading and Reflection (I want to do something with this and the GAC)
-24. Runtime Serialization (Maybe a quick read)
-25. Interop with Win RT (NO)
+- 20 Exceptions and State management (probably worth reading)
+- 21 Garbage Collection (definitely doing)
+- 22 CLR hosting and App Domains (quick read)
+- 23 Assembly Loading and Reflection (I want to do something with this and the GAC)
+- 24 Runtime Serialization (Maybe a quick read)
+- 25 Interop with Win RT (NO)
 
 ### Threading
 This section is completely new to me. I kind of want to read some other material on multithreading before diving into it.
 
-26. Thread Basics (THis is all text, no code). I think it's worth doing in parts
-27. Compute-Bound Async Operations
-28. I/O-Bound Asynchronous Operations
-29. Primitive Thread Synchronization Constructs
-30. Hybrid Thread Synchronization Constructs
+- 26 Thread Basics (THis is all text, no code). I think it's worth doing in parts
+- 27 Compute-Bound Async Operations
+- 28 I/O-Bound Asynchronous Operations
+- 29 Primitive Thread Synchronization Constructs
+- 30 Hybrid Thread Synchronization Constructs
 
 I think that the priority order will be 20, 21, Threading, 23, 24
+
 #### Srikar's Opinions on why certain things are skipped:
 - Chapter 2,3 
     - A little more advanced/not as hands on for teaching a "C# course"
