@@ -357,5 +357,4 @@ MigrationBackup/
 #dsstores
 
 .DS_Store
-CLR_via_CSharp/CH17_Delegates/InitialExample/qsort.exe
 .vscode
