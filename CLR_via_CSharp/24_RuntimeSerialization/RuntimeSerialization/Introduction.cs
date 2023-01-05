@@ -9,6 +9,13 @@ Stream stream = SerializeToMemory(objectGraph);
 // Reset from 0
 
 stream.Position = 0;
+while (stream.Position < stream.Length)
+{
+    Console.WriteLine(stream.ReadByte());
+}
+
+// reset again
+stream.Position = 0;
 objectGraph = null;
 
 objectGraph = (List<String>)DeserializeFromMemory(stream);
