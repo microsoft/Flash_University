@@ -7,7 +7,19 @@
 - so the ability to convert something to and fro bytes is at the core of what computers do
 - Say we copy an item and use it in a different app, how does that work?
 - what types of serialization do you think exist?
-- 
+
+## Mike's notes
+
+- data contract, data member
+- default behavior
+- tagging
+- do name and order matter
+- enums as problems
+- good practice of adding enums to the end
+- json vs xml
+- why do we use newton soft
+
+## Binary Serialization
 ## Glossary
 
 ### Serialization
