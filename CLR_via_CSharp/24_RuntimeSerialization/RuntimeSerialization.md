@@ -8,6 +8,12 @@
 - Say we copy an item and use it in a different app, how does that work?
 - what types of serialization do you think exist?
 
+
+# Lets make something serializable
+- take a type
+- add the flag
+- what does ignore do?
+- Does order matter?
 ## Mike's notes
 
 - data contract, data member

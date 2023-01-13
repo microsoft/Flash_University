@@ -3,16 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuntimeSerialization", "RuntimeSerialization.csproj", "{D8BC8206-6D99-4AFB-9942-3E5C04C79F31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuntimeSerialization", "RuntimeSerialization.csproj", "{D8BC8206-6D99-4AFB-9942-3E5C04C79F31}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{368F4C4C-396C-4CA9-9EC9-55F3F661B7A7}"
 	ProjectSection(SolutionItems) = preProject
 		..\RuntimeSerialization.md = ..\RuntimeSerialization.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernRuntimeSerialization", "..\ModernRuntimeSerialization\ModernRuntimeSerialization.csproj", "{87D7E417-CD7C-4208-B406-D558E2EA8C48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernRuntimeSerialization", "..\ModernRuntimeSerialization\ModernRuntimeSerialization.csproj", "{87D7E417-CD7C-4208-B406-D558E2EA8C48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernBinarySerialization", "..\ModernBinarySerialization\ModernBinarySerialization.csproj", "{9A87F823-76C7-434B-9320-CFA4887B55B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernBinarySerialization", "..\ModernBinarySerialization\ModernBinarySerialization.csproj", "{9A87F823-76C7-434B-9320-CFA4887B55B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeSerializable", "..\MakeSerializable\MakeSerializable.csproj", "{3CE7E45A-21CF-41A8-9D89-F4822B46102F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializingEnums", "..\SerializingEnums\SerializingEnums.csproj", "{658B79CA-AB1E-42B0-8902-8C749DC4F0E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +36,14 @@ Global
 		{9A87F823-76C7-434B-9320-CFA4887B55B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A87F823-76C7-434B-9320-CFA4887B55B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A87F823-76C7-434B-9320-CFA4887B55B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE7E45A-21CF-41A8-9D89-F4822B46102F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE7E45A-21CF-41A8-9D89-F4822B46102F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE7E45A-21CF-41A8-9D89-F4822B46102F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE7E45A-21CF-41A8-9D89-F4822B46102F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{658B79CA-AB1E-42B0-8902-8C749DC4F0E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{658B79CA-AB1E-42B0-8902-8C749DC4F0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{658B79CA-AB1E-42B0-8902-8C749DC4F0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{658B79CA-AB1E-42B0-8902-8C749DC4F0E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
