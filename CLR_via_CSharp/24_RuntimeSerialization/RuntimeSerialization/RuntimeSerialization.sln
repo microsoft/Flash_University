@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializingEnums", "..\Seri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializingBestPractices", "..\SerializingBestPractices\SerializingBestPractices.csproj", "{BFC9C633-60E7-4046-9B76-5E63421EC1C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStuff", "..\DataStuff\DataStuff.csproj", "{9278767F-A4E5-455D-B1B7-F4EE787037E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{BFC9C633-60E7-4046-9B76-5E63421EC1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFC9C633-60E7-4046-9B76-5E63421EC1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFC9C633-60E7-4046-9B76-5E63421EC1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9278767F-A4E5-455D-B1B7-F4EE787037E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9278767F-A4E5-455D-B1B7-F4EE787037E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9278767F-A4E5-455D-B1B7-F4EE787037E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9278767F-A4E5-455D-B1B7-F4EE787037E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

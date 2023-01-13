@@ -21,6 +21,7 @@ p.y = 10;
 Console.WriteLine(JsonConvert.SerializeObject(p));
 
 //fix here
+//datacontract, datamember, ignore
 class Point
 {
     public int x { get; set; }

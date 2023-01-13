@@ -16,7 +16,6 @@
 - Does order matter?
 ## Mike's notes
 
-- data contract, data member
 - default behavior
 - tagging
 - do name and order matter
@@ -24,6 +23,7 @@
 - good practice of adding enums to the end
 - json vs xml
 - why do we use newton soft
+- What it might look like (see link)
 
 ## Binary Serialization
 ## Glossary
