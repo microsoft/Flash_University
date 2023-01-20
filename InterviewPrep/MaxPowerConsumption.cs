@@ -1,7 +1,10 @@
 using System;
-// Problem:For a particular building you have a list of data points that describe the per-device power consumption of every device in the building.  Each data point looks something like this:<deviceId>,<startTime>,<endTime>,<instantaneous power consumption in Watts> You can assume the following:You can have multiple records for the same device (ie a device could be turned on and off more than once in the day)
+// Problem:For a particular building you have a list of data points that describe the per-device power consumption of every device in the building.  
+// Each data point looks something like this:<deviceId>,<startTime>,<endTime>,<instantaneous power consumption in Watts> 
+// You can assume the following:You can have multiple records for the same device (ie a device could be turned on and off more than once in the day)
 
-// However no two or more records for the same device can have overlapping start/end times.  IE a single device can be turned on more than once per day, but it can’t be turned on more than once at a time.The instantaneous power consumption (measured in watts) for a device is constant while it is on for a single data point.The instantaneous power consumption (measured in watts) for a device can vary from data point to data point.  This means that two different records for the same deviceId (with necessarily different times) might have different power consumptions. Your task then, is to calculate the maximum instantaneous power consumption across all devices in the building. 
+// However no two or more records for the same device can have overlapping start/end times.  
+// IE a single device can be turned on more than once per day, but it can’t be turned on more than once at a time.The instantaneous power consumption (measured in watts) for a device is constant while it is on for a single data point.The instantaneous power consumption (measured in watts) for a device can vary from data point to data point.  This means that two different records for the same deviceId (with necessarily different times) might have different power consumptions. Your task then, is to calculate the maximum instantaneous power consumption across all devices in the building. 
 
 // assuming all watts are ints
 using System.Collections.Generic;
@@ -37,6 +40,7 @@ class Program
           arrayOfValues.Add(new DataPoint(2, 5, 6, 10));
           arrayOfValues.Add(new DataPoint(3, 1, 3, 20));
           arrayOfValues.Add(new DataPoint(3, 7, 8, 20));
+          // the solar cell
           // arrayOfValues.Add(new DataPoint(4, 0, 8, -30));
           foreach (var datapoint in arrayOfValues)
           {
@@ -53,7 +57,7 @@ class Program
 
             while (pq.Count>0 && pq.Peek().Item2== timeInstance ){
               (var currentData, var currentTime) = pq.Dequeue();
-              Console.WriteLine(currentData);
+              // Console.WriteLine(currentData);
               CurrentTotal += currentData;
             }
 
