@@ -28,5 +28,7 @@ Should give 1, 3, 2, 4, 5, 6, 7, 9, 8, 10, 11
 https://projecteuler.net/problem=25
 
 ## 2023/02/10
-
+### Easy
+https://projecteuler.net/problem=7
+### Harder
 https://projecteuler.net/problem=50
