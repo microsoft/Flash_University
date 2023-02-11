@@ -1,4 +1,4 @@
-﻿// INitial example from the book
+﻿// Initial example from the book
 
 using System.Diagnostics;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -34,9 +34,11 @@ static MemoryStream SerializeToMemory(Object objectGraph)
     BinaryReader reader = new BinaryReader(stream);
     //reader.ReadBytes(objectGraph);
     // this is the outdated way of doing it
+
 #pragma warning disable SYSLIB0011
     formatter.Serialize(stream, objectGraph);
 #pragma warning restore SYSLIB0011
+
 
     return stream;
 }

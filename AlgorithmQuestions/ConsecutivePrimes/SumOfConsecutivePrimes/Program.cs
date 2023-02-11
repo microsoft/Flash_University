@@ -1,31 +1,70 @@
-﻿List<int> primesList = new List<int>(){2};
+﻿var primes = unoptimizedPrimeSieve(1000000);
+Console.WriteLine(string.Join( ",", primes));
 
-int maxValue = 50;
-
-int i = 2;
+var reversedPrimes = new List<int>(primes).ToArray();
 
 
-while (i < maxValue)
+foreach (int i in reversedPrimes.Reverse())
 {
-    bool isPrime = true;
-
-    foreach (int prime in primesList)
+    Console.WriteLine($"testing {i}");
+    if (findConsecutivePrimeSums(primes, i))
     {
-        if (i % prime == 0)
+        Console.WriteLine($"Solution is {i}");
+        break;
+    }
+}
+static List<int> unoptimizedPrimeSieve(int maxValue)
+{
+    List<int> primesList = new List<int>() { 2 };
+    int i = 3;
+    while (i <= maxValue)
+    {
+        bool isPrime = true;
+
+        foreach (int prime in primesList)
         {
-            isPrime = false;
-            break;
+            if (i % prime == 0)
+            {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime)
+        {
+            primesList.Add(i);
+        }
+        i = i+2;
+    }
+    return primesList;
+}
+
+static bool findConsecutivePrimeSums(List<int> orderedPrimes, int targetValue)
+{
+    int left= 0, right= 2, sum = orderedPrimes[0] + orderedPrimes[1];
+    while (sum != targetValue && right < orderedPrimes.Count && left < right && right-left>1)
+    {
+        if (sum < targetValue)
+        {
+            sum += orderedPrimes[right];
+            right++;
+        }
+        else
+        {
+            sum -= orderedPrimes[left];
+            left++;
         }
     }
-    if (isPrime)
+
+    if (sum == targetValue)
     {
-        primesList.Append(i);
-        Console.WriteLine(i);
+        return true;
     }
-    i++;
+    return false;
 }
-// public static 
-// for (int  =primesList.Count-1;)
-// int left = 0;
-// int right = 0;
-// int sum = 0;
+
+
+
+
+
+
+

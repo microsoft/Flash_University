@@ -53,7 +53,7 @@ static Object DeserializeFromMemory(Stream stream)
 
 enum NotAnEnum
 {
-     a, b, c
+     b, a, c
 }
 [Serializable]
 class ObjectWithEnums
