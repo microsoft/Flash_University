@@ -3,8 +3,15 @@
 ## Goals
 - Understand the mechanics/algorithms of garbage collection
   - Ideally, see this visually 
-- What tooling do we have?
+- See some proof that it's happening
+- Understand Mark, Sweep, and compact
+- Understand the rationale for each one
 - How to manually call the GC in our code?
+- Understand Michael's notes
+  - Native code vs managed code example
+- Understanding framentation
+- Pinning
+- Almost all code is native code at some level
 
 ## Managed Heap Basics
 
@@ -30,4 +37,14 @@
 *
 // TODO look at 507 for better notes
 // What is the fundamental flaw of this? -- Memory ain't infinite.
+
 ## Generations: Improving perf
+
+### Gen 0
+Objects added to hep that have never been exampined
+
+### Gen 1 
+Objects added to heap that have survived > 0 and less than 4 marks
+
+### Gen 2 
+Objects added to heap that have survived 4 generations.
