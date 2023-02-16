@@ -42,9 +42,15 @@
 
 ### Gen 0
 Objects added to hep that have never been exampined
+Examined every time
 
 ### Gen 1 
 Objects added to heap that have survived > 0 and < 2 marks
 
 ### Gen 2 
 Objects added to heap that have survived >=2 marks.
+
+
+// TODO GC.collect example of changing memory locations of a type
+
+## Pinning
