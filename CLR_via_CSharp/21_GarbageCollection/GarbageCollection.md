@@ -44,7 +44,7 @@
 Objects added to hep that have never been exampined
 
 ### Gen 1 
-Objects added to heap that have survived > 0 and less than 4 marks
+Objects added to heap that have survived > 0 and < 2 marks
 
 ### Gen 2 
-Objects added to heap that have survived 4 generations.
+Objects added to heap that have survived >=2 marks.
