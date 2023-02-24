@@ -32,3 +32,10 @@ https://projecteuler.net/problem=25
 https://projecteuler.net/problem=7
 ### Harder
 https://projecteuler.net/problem=50
+
+## 2023/02/24
+### Easy
+https://projecteuler.net/problem=18
+
+### Harder
+https://projecteuler.net/problem=67
