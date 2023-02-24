@@ -34,6 +34,10 @@ https://projecteuler.net/problem=7
 https://projecteuler.net/problem=50
 
 ## 2023/02/24
+### Easier one, getting back into things
+https://projecteuler.net/problem=11
+
+## 2023/03/03
 ### Easy
 https://projecteuler.net/problem=18
 
