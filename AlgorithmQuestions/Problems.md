@@ -43,3 +43,6 @@ https://projecteuler.net/problem=18
 
 ### Harder
 https://projecteuler.net/problem=67
+
+### Alternate
+https://projecteuler.net/problem=31
